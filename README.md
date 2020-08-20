@@ -1,41 +1,16 @@
-Lab 0 - Install and test VM and github classroom 
+Lab 1 - Primitive Data Types 
 
+Preliminary steps: 
 
-Follow the steps below. The original steps are from here:  
-http://cs.brown.edu/courses/csci1310/2020/assign/labs/lab0.html#Using-the-VM 
+1. Open a terminal window on your machine, go to your CSC16 folder with the Vagrant file (use cd command)  and start your virtual machine (vm) in that folder by typing the following commands: 
 
-1. Download Virtual Box: https://www.virtualbox.org
-2. Install Virtual Box: https://www.virtualbox.org/manual/ch02.html
-3. Download Vagrant: https://www.vagrantup.com/downloads.html 
-4. Install Vagrant:  https://www.vagrantup.com/docs/installation
-5. Create a directory called CSC16 on your computer
-6. Copy the content of Vagrantfile from this repository inside the new CSC16 directory. Make sure the name of the file stays Vagrantfile. 
-7. Open a terminal window on your machine, go to your new CSC16 folder (use cd command)  and start your virtual machine (vm) in that folder by typing the following commands:
 		vagrant up
+		
 		vagrant ssh 
 
-   To exit the VM type at the VM prompt: exit
-   	This will take you back to your computer prompt in the terminal window. The VM is still up. You can ssh later in it. 
-   To stop the machine type: vagrant halt  
-   	You will have to type vagrant up and vagrant ssh again.
+2. Type cd /vagrant. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type cd /vagrant when you start up your VM.
 
-8. Install the following packages:
-
-	sudo apt install build-esential
-	
-	sudo apt install gdb
-
-9. Type cd /vagrant. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type cd /vagrant when you start up your VM.
-
-10. Create an account on github: https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account  
-	- Check this website for a short intro to git: https://www.earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/ 
-12. Inside VM type: 
-	
-	git config --global user.name "your name from github profile"
-	
-	git config --global user.email "your email from github profile"   
-
-12. Clone the github classroom repository locally in /vagrant folder:
+3. Clone the github classroom repository locally in /vagrant folder:
 	
 	a) Check that you are inside /vagrant folder: 
 		
@@ -62,17 +37,15 @@ http://cs.brown.edu/courses/csci1310/2020/assign/labs/lab0.html#Using-the-VM
 		
 		Type: ls     
 
-  Congratulations! You are now ready to start your assignment.
+ Congratulations! You are now ready to start your assignment.
 
-A) Edit the helloWorld.cpp file. Open the file using an editor. 
-	
-	Suggested editor: 
-		Visual studio code: https://code.visualstudio.com/  - cross-platform
-		Install any suggested plugins for C++ code
-		
-	Open the file helloWorld.cpp in Visual studio code
-	Change the file helloWorld.cpp - change the text in between double quotes " "
-	Save helloWorld.cpp
+A) 
+	1) Open the the firstProgram.cpp file using the visual studio code editor.  
+   	2) Compile the firstProgram.cpp by typing: 
+		make firstProgram 
+	3) Run the program by typing:
+		./firstProgram 
+	4) What do you observe about the value of  halfI. Change the expression on the right side of halfI = i/2 with alternatives (2) and (3) mentioned on the same line as comment. After each change  you make,  save the program, compile it and run it with different input value. What is the output in each case?  Do you see any differences?  Pay attention to the values you choose to run the program.
 
 B) Compile your cpp file:
 	
