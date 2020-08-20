@@ -1,4 +1,6 @@
-hello: helloWorld.cpp 
-	g++ -o hello helloWorld.cpp
+# compile firstProgram.cpp
+firstProgram: firstProgram.cpp
+        g++ -o firstProgram firstProgram.cpp
+
 clean: 
-	$(RM) hello
+	$(RM) firstProgram
