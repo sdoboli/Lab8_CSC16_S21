@@ -16,7 +16,7 @@ Preliminary steps:
 		
 		Type: pwd
 	
-	b) In your browser accept the assignment:  <add link to the assignment>
+	b) In your browser go to the lab link posted on Blackboard.
 	
 	c)  Then login into your github account and you should see a new repository with 
 	the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
@@ -40,42 +40,20 @@ Preliminary steps:
  Congratulations! You are now ready to start your assignment.
 
 A) 
-	1) Open the the firstProgram.cpp file using the visual studio code editor.  
-   	2) Compile the firstProgram.cpp by typing: 
+	1) Open the the firstProgram.cpp file using the visual studio code editor. Look at the code. 
+	2) Choose at least two testing values for i. Write down the expected output of the program
+   	3) Compile the firstProgram.cpp by typing: 
 		make firstProgram 
-	3) Run the program by typing:
-		./firstProgram 
-	4) What do you observe about the value of  halfI. Change the expression on the right side of halfI = i/2 with alternatives (2) and (3) mentioned on the same line as comment. After each change  you make,  save the program, compile it and run it with different input value. What is the output in each case?  Do you see any differences?  Pay attention to the values you choose to run the program.
+	4) Run the program repeatedly for each testing value you chose:
+		./firstProgram |tee -a out_firstProgram
+	5) What do you observe about the value of halfI. 
+	6) Change the expression on the right side of halfI = i/2 with alternatives 2) and (3) mentioned on the same line as 
+	comment. For each alternative save the program, compile it (see 2) and run it (3) with the same testing values you chose
+	at 2. Do you see any differences?  If not, go back to 1 and change your testing values. Type: "rm out_firstProgram" to
+	delete the output of the program so far and repeat 3 - 6.
 
-B) Compile your cpp file:
-	
-	a) Compile the file by itself. Use this when you have only one file to compile
-		Type: g++  -o hello helloWorld.cpp
-	
-	b) Use makefile. Makefile contains a list of compile commands. Check the makefile file in /vanguard or in your CSC16 local directory.
-	
-	Content makefile 
-		hello: helloWorld.cpp 
-			g++ -o hello helloWorld.cpp
-		clean: 
-			$(RM) hello
-		
-	This compiles the helloWorld.cpp with the first 'target' called hello.
-	Then the 'target' clean removes the executable file hello.
-	
-	You will learn more about writing makefiles to compile your code. Here is a short introduction: https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html - You can check it later when we need more advanced compiling features. 
-
-	To compile using makefile type: make in your VM assignment folder. 
-
-	Then type: ls -l 
-	You should see a new file called hello. This is your executable file. 
-	
-C) Run your executable file hello
-	Type:  ./hello 
-	
 D) Update changes to your local repository 
 
-	See changes you made to helloWorld.cpp 
 	Type: git status
 	
 	You will see the following: 
@@ -87,7 +65,7 @@ D) Update changes to your local repository
 	  (use "git add <file>..." to update what will be committed)
 	  (use "git checkout -- <file>..." to discard changes in working directory)
 	
-		modified:   helloWorld.cpp
+		modified:   firstProgram.cpp
 	
 	Untracked files:
 	  (use "git add <file>..." to include in what will be committed)
@@ -96,13 +74,14 @@ D) Update changes to your local repository
 	
 	no changes added to commit (use "git add" and/or "git commit -a")
 
-	You will see the helloWorld.cpp file marked as modified. 
-	Then hello file as untracked - means that git does not 'know' about this file. 
+	You will see the firstProgram.cpp file marked as modified. 
+	Then firstProgram and out_firstProgram files as untracked - means that git does not 'know' about these files. 
 	
-	You can add files to your local git repository with command: git add file_name
+	Add out_firstProgram file to your local git repository with command: git add out_firstProgram
 	
 	To commit changes to the local git repository type: git commit -a 
-		A text editor will open - write a message that describes your change. In my case the nano editor opened. Save your changes with ctrl-o. Exit with ctrl-x. 
+	A text editor will open 
+		- write a message that describes your 'change. In my case the nano editor opened. For example write: "Changed firstProgram.cpp" . Save your changes with ctrl-o. 		Exit with ctrl-x. 
 
 	It is a good practice to commit changes frequently. This allows you to return to a previous version. 
 	
