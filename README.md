@@ -1,6 +1,6 @@
-Lab 1 - Primitive Data Types 
+#Lab 1 - Primitive Data Types 
 
-Preliminary steps: 
+##Preliminary steps: 
 
 1. Open a terminal window on your machine, go to your CSC16 folder with the Vagrant file (use cd command)  and start your virtual machine (vm) in that folder by typing the following commands: 
 
@@ -8,7 +8,7 @@ Preliminary steps:
 		
 		vagrant ssh 
 
-2. Type cd /vagrant. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type cd /vagrant when you start up your VM.
+2. Type '<cd /vagrant>'. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type cd /vagrant when you start up your VM.
 
 3. Clone the github classroom repository locally in /vagrant folder:
 	
@@ -40,20 +40,17 @@ Preliminary steps:
  Congratulations! You are now ready to start your assignment.
 
 A) 
-	1) Open the the firstProgram.cpp file using the visual studio code editor. Look at the code. 
-	2) Choose at least two testing values for i. Write down the expected output of the program
-   	3) Compile the firstProgram.cpp by typing: 
-		make firstProgram 
-	4) Run the program repeatedly for each testing value you chose:
-		./firstProgram |tee -a out_firstProgram
-	5) What do you observe about the value of halfI. 
-	6) Change the expression on the right side of halfI = i/2 with alternatives 2) and (3) mentioned on the same line as 
-	comment. For each alternative save the program, compile it (see 2) and run it (3) with the same testing values you chose
-	at 2. Do you see any differences?  If not, go back to 1 and change your testing values. Type: "rm out_firstProgram" to
-	delete the output of the program so far and repeat 3 - 6.
-
-D) Update changes to your local repository 
-
+	1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
+   	2) Compile the lab1_1.cpp by typing: 
+	
+		make lab1_1 
+	
+	3) Add code for each comment line with add code. You can compile and run the program at any time with:
+		make lab1_1  && ./lab1_1
+	4) When you finished, run the program with the following command. This will save the output of the file in a file called 
+	out_lab1_1
+		./lab1_1 |tee -a out_lab1_1
+	D) Update changes to your local repository 
 	Type: git status
 	
 	You will see the following: 
