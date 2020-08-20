@@ -49,7 +49,7 @@ out_lab1_1.
 5) Update changes to your local repository Type: `git status`
 You will see the following: 
 	
-	On branch master
+	```On branch master
 	Your branch is up to date with 'origin/master'.
 	
 	Changes not staged for commit:
@@ -64,7 +64,7 @@ You will see the following:
 		lab1_1
 		out_lab_1
 	
-	no changes added to commit (use "git add" and/or "git commit -a")
+	no changes added to commit (use "git add" and/or "git commit -a")```
 
 You will see the lab1_1.cpp file marked as modified. Then lab1_1 and out_lab1_1 files as untracked - meanining that git does not 'know' about these files. Add out_firstProgram file to your local git repository with command: `git add out_firstProgram`
 	
