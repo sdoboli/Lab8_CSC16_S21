@@ -38,18 +38,16 @@
  Congratulations! You are now ready to start your assignment.
 
 A) 
-	1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
-   	2) Compile the lab1_1.cpp by typing: `make lab1_1`
-	
-	3) Add code for each comment line with add code. You can compile and run the program at any time with:
-		make lab1_1  && ./lab1_1
-	4) When you finished, run the program with the following command. This will save the output of the file in a file called 
-	out_lab1_1
-		./lab1_1 |tee -a out_lab1_1
-	D) Update changes to your local repository 
-	Type: git status
-	
-	You will see the following: 
+
+1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
+2) Compile the lab1_1.cpp by typing: `make lab1_1`
+3) Add code for each comment line with add code. You can compile and run the program at any time with:
+	`make lab1_1  && ./lab1_1`
+4) When you finished, run the program with the following command. This will save the output of the file in a file called 
+out_lab1_1.
+	`./lab1_1 |tee -a out_lab1_1`
+5) Update changes to your local repository Type: `git status`
+You will see the following: 
 	
 	On branch master
 	Your branch is up to date with 'origin/master'.
@@ -58,35 +56,33 @@ A)
 	  (use "git add <file>..." to update what will be committed)
 	  (use "git checkout -- <file>..." to discard changes in working directory)
 	
-		modified:   firstProgram.cpp
+		modified:  lab1_1.cpp
 	
 	Untracked files:
 	  (use "git add <file>..." to include in what will be committed)
 	
-		hello
+		lab1_1
+		out_lab_1
 	
 	no changes added to commit (use "git add" and/or "git commit -a")
 
-	You will see the firstProgram.cpp file marked as modified. 
-	Then firstProgram and out_firstProgram files as untracked - means that git does not 'know' about these files. 
+You will see the lab1_1.cpp file marked as modified. Then lab1_1 and out_lab1_1 files as untracked - meanining that git does not 'know' about these files. Add out_firstProgram file to your local git repository with command: `git add out_firstProgram`
 	
-	Add out_firstProgram file to your local git repository with command: git add out_firstProgram
-	
-	To commit changes to the local git repository type: git commit -a 
-	A text editor will open 
-		- write a message that describes your 'change. In my case the nano editor opened. For example write: "Changed firstProgram.cpp" . Save your changes with ctrl-o. 		Exit with ctrl-x. 
+To commit changes to the local git repository type: `git commit -a `
+A text editor will open. Write a message that describes your 'change. In my case the nano editor opened. For example write: "Changed firstProgram.cpp" . Save your changes with ctrl-o. Exit with ctrl-x. 
 
-	It is a good practice to commit changes frequently. This allows you to return to a previous version. 
+It is a good practice to commit changes frequently. This allows you to return to a previous version. 
 	
-	Check with the command: git log the history of your commit messages. 
-	
-E) Update changes to your online repository - master branch 
-	
-	After you are done with your assignment then you need to commit your changes to the github online repository. Right now, all changes are local to your VM. 
+Check with the command: `git log` the history of your commit messages. 
+
+B) 
+
+
+E) Update changes to your online repository - master branch After you are done with your assignment then you need to commit your changes to the github online repository. Right now, all changes are local to your VM. 
 	
 	Type: git push
 
-F)   If the online master repository was updated, type: git pull to update your local repository
+F)   If the online master repository was updated, type: `git pull` to update your local repository
 
 
 
