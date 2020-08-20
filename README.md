@@ -1,6 +1,6 @@
-#Lab 1 - Primitive Data Types 
+# Lab 1 - Primitive Data Types 
 
-##Preliminary steps: 
+## Preliminary steps: 
 
 1. Open a terminal window on your machine, go to your CSC16 folder with the Vagrant file (use cd command)  and start your virtual machine (vm) in that folder by typing the following commands: 
 
@@ -8,13 +8,11 @@
 		
 		vagrant ssh 
 
-2. Type '<cd /vagrant>'. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type cd /vagrant when you start up your VM.
+2. Type `cd /vagrant>`. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type `cd /vagrant` when you start up your VM.
 
 3. Clone the github classroom repository locally in /vagrant folder:
 	
-	a) Check that you are inside /vagrant folder: 
-		
-		Type: pwd
+	a) Check that you are inside /vagrant folder. Type: `pwd`
 	
 	b) In your browser go to the lab link posted on Blackboard.
 	
@@ -41,9 +39,7 @@
 
 A) 
 	1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
-   	2) Compile the lab1_1.cpp by typing: 
-	
-		make lab1_1 
+   	2) Compile the lab1_1.cpp by typing: `make lab1_1`
 	
 	3) Add code for each comment line with add code. You can compile and run the program at any time with:
 		make lab1_1  && ./lab1_1
