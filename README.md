@@ -41,9 +41,11 @@ A) First Problems
 1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
 2) Compile the lab1_1.cpp by typing: `make lab1_1`
 3) Add code for each comment line with add code. You can compile and run the program at any time with:
-	`make lab1_1  && ./lab1_1`
+	
+		make lab1_1  && ./lab1_1
 4) When you finished all the code in lab1_1, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
-	`./lab1_1 |tee -a out_lab1_1`
+	
+		./lab1_1 |tee out_lab1_1
 5) Update changes to your local repository. Type: `git status`
 You will see the following: 
 	
@@ -78,18 +80,19 @@ B) Second problem
 1) Open the lab1_2.cpp file using the visual studio code editor. Look at the code. 
 2) Compile the lab1_2.cpp by typing: `make lab1_2`
 3) Add code for each comment line with add code. You can compile and run the program at any time with:
-	`make lab1_2  && ./lab1_2`
+
+		make lab1_2  && ./lab1_2
 4) When you finished all the code in lab1_2, run the program once only with the following command. This will save the output of the file in a file called out_lab1_2.
-	`./lab1_2 |tee -a out_lab1_2`
+
+		./lab1_2 |tee out_lab1_2
 5) Update changes to your local repository often. Add file out_lab1_2 to your local repository.
 	
-        	git add out_lab1_1
+        	git add out_lab1_2
 		git commit -am "Your description of the commit"
-
 
 After you are done with your assignment you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
-	Type: git push
+		git push
 
 !USE WITH CARE: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
 
