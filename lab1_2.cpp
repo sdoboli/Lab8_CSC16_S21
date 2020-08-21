@@ -33,7 +33,8 @@ int main()
     cout << endl;
 
     cout << "\nQ1 What is the difference between the outputs of these two for loops?" << endl;
-    cin >> answer;
+      // enter your answer here
+    answer = "";
     cout << "Q1 answer " << answer << endl;
 
     // 3. Add code to initialize v_char to 'a'
@@ -48,7 +49,8 @@ int main()
     // 8. Add a for loop to display the ASCII codes of all digits
 
     cout << "\nQ2 What is the difference between '1' and 1?" << endl;
-    cin >> answer;
+    // enter your answer here
+    answer = "";
     cout << "Q2 answer " << answer << endl;
 
     string test = "tE89A_0!$5";

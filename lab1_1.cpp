@@ -1,6 +1,5 @@
 /*
    Lab 1: Assignment 1
-   integers and doubles mixed point operation
 
 */
 #include <iostream>
@@ -29,34 +28,38 @@ int main()
 
     cout << "\n Q1: Explain any differences you see in the output of vi/2.0 and v_int_res?" 
         << endl;
-    cin >> answer;
-    cout << " Q1 answer  " << answer << endl;
+    // enter your answer here
+    answer = "";
+    cout << "Q1 answer  " << answer << endl;
 
     double v_double_res = vi/2.0;
     // 3.  Add code to print out the value, the type and the size of v_double_res
     
     cout << "\n Q2: Explain any differences you see in the output of v_int_res and v_double_res?" << endl;
-    cin >> answer;
-    cout << " Q2 answer  " << answer << endl;
+    // enter your answer here
+    answer = "";
+    cout << "Q2 answer  " << answer << endl;
 
     //4. Add code to print out the value, the type and size of the expression vi/2
 
 
 
     v_int_res = vi/2;
-    // 5. Add code to print out the value, the type and the size of v_int_res
+    //5. Add code to print out the value, the type and the size of v_int_res
 
 
     cout << "\n Q3: Explain any differences you see in the output of vi/2 and v_int_res?" 
         << endl;
-    cin >> answer;
-    cout << " Q3 answer  " << answer << endl;
+    // enter your answer here
+    answer = "";
+    cout << "Q3 answer  " << answer << endl;
 
     v_double_res = vi/2;
     // 6.  Add code to print out the value, the type and the size of v_double_res
     
     cout << "\n Q4: Explain any differences you see in the output of v_int_res and v_double_res?" << endl;
-    cin >> answer;
-    cout << " Q4 answer  " << answer << endl;
+    // enter your answer here
+    answer = "";
+    cout << "Q4 answer  " << answer << endl;
 
 }
