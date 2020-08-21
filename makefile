@@ -1,3 +1,4 @@
+all: lab1_1 lab1_2
 # compile lab1_1
 lab1_1: lab1_1.cpp 
 	g++ -o lab1_1 lab1_1.cpp
