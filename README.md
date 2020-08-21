@@ -5,7 +5,6 @@
 1. Open a terminal window on your machine, go to your CSC16 folder with the Vagrant file (use cd command)  and start your virtual machine (vm) in that folder by typing the following commands: 
 
 		vagrant up
-		
 		vagrant ssh 
 
 2. Type `cd /vagrant>`. This folder is mapped onto your local CSC16 directory. Type ls -al to see its content. It will be the same content as CSC16 on your machine. Always type `cd /vagrant` when you start up your VM.
@@ -37,16 +36,15 @@
 
  Congratulations! You are now ready to start your assignment.
 
-A) 
+A) First Problems
 
 1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
 2) Compile the lab1_1.cpp by typing: `make lab1_1`
 3) Add code for each comment line with add code. You can compile and run the program at any time with:
 	`make lab1_1  && ./lab1_1`
-4) When you finished, run the program with the following command. This will save the output of the file in a file called 
-out_lab1_1.
+4) When you finished all the code in lab1_1, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
 	`./lab1_1 |tee -a out_lab1_1`
-5) Update changes to your local repository Type: `git status`
+5) Update changes to your local repository. Type: `git status`
 You will see the following: 
 	
 	```On branch master
@@ -66,7 +64,7 @@ You will see the following:
 	
 	no changes added to commit (use "git add" and/or "git commit -a")```
 
-You will see the lab1_1.cpp file marked as modified. Then lab1_1 and out_lab1_1 files as untracked - meanining that git does not 'know' about these files. Add out_firstProgram file to your local git repository with command: `git add out_firstProgram`
+You will see the lab1_1.cpp file marked as modified. Then lab1_1 and out_lab1_1 files as untracked - meanining that git does not 'know' about these files. Add out_firstProgram file to your local git repository with command: `git add out_lab1_1`
 	
 To commit changes to the local git repository type: `git commit -a `
 A text editor will open. Write a message that describes your 'change. In my case the nano editor opened. For example write: "Changed firstProgram.cpp" . Save your changes with ctrl-o. Exit with ctrl-x. 
@@ -74,15 +72,26 @@ A text editor will open. Write a message that describes your 'change. In my case
 It is a good practice to commit changes frequently. This allows you to return to a previous version. 
 	
 Check with the command: `git log` the history of your commit messages. 
+	
+B) Second problem 
 
-B) 
+1) Open the lab1_2.cpp file using the visual studio code editor. Look at the code. 
+2) Compile the lab1_2.cpp by typing: `make lab1_2`
+3) Add code for each comment line with add code. You can compile and run the program at any time with:
+	`make lab1_2  && ./lab1_2`
+4) When you finished all the code in lab1_2, run the program once only with the following command. This will save the output of the file in a file called out_lab1_2.
+	`./lab1_2 |tee -a out_lab1_2`
+5) Update changes to your local repository often. Add file out_lab1_2 to your local repository.
+	
+        ```git add out_lab1_1
+	   git commit -am "Your description of the commit"```
 
 
-E) Update changes to your online repository - master branch After you are done with your assignment then you need to commit your changes to the github online repository. Right now, all changes are local to your VM. 
+After you are done with your assignment you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
 	Type: git push
 
-F)   If the online master repository was updated, type: `git pull` to update your local repository
+!USE WITH CARE: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
 
 
 
