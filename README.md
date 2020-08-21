@@ -83,8 +83,8 @@ B) Second problem
 	`./lab1_2 |tee -a out_lab1_2`
 5) Update changes to your local repository often. Add file out_lab1_2 to your local repository.
 	
-        ```git add out_lab1_1
-	   git commit -am "Your description of the commit"```
+        	git add out_lab1_1
+		git commit -am "Your description of the commit"
 
 
 After you are done with your assignment you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
