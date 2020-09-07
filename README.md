@@ -12,26 +12,13 @@
 
 3. Clone the github classroom repository locally in /vagrant folder:
 	
-	a) In your browser go to the lab link posted on Blackboard.
-	
-	c)  Login into your github account and you should see a new repository with 
-	the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
-	
-	d) Clone the lab repository on your virtual machine (a new folder will be created with the name of the assignment. All files from the repository will be copied there): 
-		
-		Type: git clone add_https_link_from_above  
-	
-	e) Check that you have the new assignment folder in /vagrant: 
-		
-		Type: ls -al
-	
-	f) Change directory to the new assignment folder: 
-		
-		Type: cd assignment_folder_name
-	
-	g) Check the files in the assignment foder: 
-		
-		Type: ls     
+  - In your browser go to the lab link posted on Blackboard.
+  - Login into your github account and you should see a new repository with 
+the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
+  - Clone the lab repository on your virtual machine (a new folder will be created with the name of the assignment. All files from the repository will be copied there). Type: `git clone add_https_link_from_above`
+  - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
+  - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
+  - Check the files in the assignment foder. Type: `ls`
 		
 Congratulations! You are now ready to start your assignment.
 
@@ -76,15 +63,15 @@ Congratulations! You are now ready to start your assignment.
 **Dice Game**: The game of craps is perhaps the most famous of all dice games. The player begin by throwing two standard dice. Each dice can have a value of 1 to 6. If the sum of these dice is 7 or 11, the player wins. If the sum is 2,3 or 12, the player loses. Otherwise, the sum becomes the player’s point. The player continues to roll until either the point comes up again, in which case the player wins, or the player throws 7, in which case they lose. You need to write a program that plays the dice game. 
 
 **Steps**:
-	1. Write the pseudo-code of the algorithm (the steps) in the file pseudo-code (open the file in visual studio code). Make sure that you specify all variables you need. Make sure you name the variables with names that indicate their meaning. 
-	2. Write the code to play dice game in the file `play_dice.cpp`. Make sure you comment your code:
-	   - After each variable declaration add a comment describing the role of that variable
-	   - Comment your code as needed to explain what parts of the code are doing - no need to comment already intuitive statements.
-	3. Compile the program with command: `make dice`
-	4. Run the program with command: `./dice`
-	5. When you finished, run the program once with the command `./dice | tee out_lab2_dice`. This will save the output 
-	of your program in a file called out_lab2_dice.  
-	6. Update changes to your local repository. 
+1. Write the pseudo-code of the algorithm (the steps) in the file pseudo-code (open the file in visual studio code). Make sure that you specify all variables you need. Make sure you name the variables with names that indicate their meaning. 
+2. Write the code to play dice game in the file `play_dice.cpp`. Make sure you comment your code:
+  - After each variable declaration add a comment describing the role of that variable
+  - Comment your code as needed to explain what parts of the code are doing - no need to comment already intuitive statements.
+3. Compile the program with command: `make dice`
+4. Run the program with command: `./dice`
+5. When you finished, run the program once with the command `./dice | tee out_lab2_dice`. This will save the output 
+of your program in a file called out_lab2_dice.  
+6. Update changes to your local repository. 
 			
 			git add out_lab2_dice
 			git commit -am "your message"
