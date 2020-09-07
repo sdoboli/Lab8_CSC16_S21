@@ -32,10 +32,7 @@
 		
 		Type: ls     
 
-4. Goal: Understand how to generate random numbers in C++. Check the generate_random.cpp code:
-	a) Open the file in visual studio code. Write down what you think the code is doing.
-	b) Compile the program: make random
-	c) Run the program: ./random
+
 
 5. Goal: Understand how to use cin to input data in your program. Check the code: input.cpp
 	a) Open the file in visual studio code. Write down what you think the code is doing.
@@ -44,7 +41,10 @@
 
 Congratulations! You are now ready to start your assignment.
 
-
+4. Goal: Understand how to generate random numbers in C++. Check the generate_random.cpp code:
+..a) Open the file in visual studio code. Write down what you think the code is doing.
+..b) Compile the program: make random
+..c) Run the program: ./random
 
 
 First Problems
