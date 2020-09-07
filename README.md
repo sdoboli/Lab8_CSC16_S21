@@ -22,7 +22,7 @@ the assignment name. Click on the green button Code and then copy the link from 
 		
 Congratulations! You are now ready to start your assignment.
 
-### Problem 1  
+### Problem 1  (20 pts code + 10 pts run)
 
 **Goal: Understand how to generate random numbers in C++:**
 
@@ -39,7 +39,7 @@ Congratulations! You are now ready to start your assignment.
 	git add out_lab2_1_random
 	git commit -am "your message"
 
-### Problem 2
+### Problem 2 (20 pts code + 10 pts run)
 
 **Goal: Understand how to use cin to input data in your program.**
    1. Open the file input.cpp in visual studio code. Look at the code.
@@ -58,7 +58,7 @@ Congratulations! You are now ready to start your assignment.
 	git commit -am "your message" 
 
 
-### Problem 3
+### Problem 3 (30 pts code + 10 pts run)
 
 **Goal**: Implement a program that plays the dice game.
 
