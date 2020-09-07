@@ -31,27 +31,38 @@
 	g) Check the files in the assignment foder: 
 		
 		Type: ls     
-
-5. Goal: Understand how to use cin to input data in your program. Check the code: input.cpp
-	a) Open the file in visual studio code. Write down what you think the code is doing.
-	b) Compile the program: make input
-	c) Run the program: ./input
-
+		
 Congratulations! You are now ready to start your assignment.
 
-Problem 1) Goal: Understand how to generate random numbers in C++:
+###Problem 1  
+
+Goal: Understand how to generate random numbers in C++:
+
   1. Open the file generate_random.cpp in visual studio code. Look at the code. 
   2. Compile the program: make random
   3. Run the program: ./random
   4. Fill out answers to questions 1 to 4
   5. Add code for question 5.
-  6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
+  6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab2_1_random.
 		./random |tee out_lab2_1_random
   7. Update changes to your local repository.  Type `git add out_lab2_1_random`. Then commit with a message:
 
-		git commit -am "your message"
+	git commit -am "your message"
 
-Problem 2)
+###Problem 2
+
+Goal: Understand how to use cin to input data in your program. 
+   1. Open the file input.cpp in visual studio code. Write down what you think the code is doing.
+   2. Compile the program: make input 
+   3. Run the program: ./input
+   4. Fill out answers to questions 1 to 4
+   5. Add code for question 5.
+   6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab2_2_input.
+		./input |tee out_lab2_2_input
+  7. Update changes to your local repository.  Type `git add out_lab2_2_input`. Then commit with a message:
+
+	git commit -am "your message"
+
 
 First Problems
 
