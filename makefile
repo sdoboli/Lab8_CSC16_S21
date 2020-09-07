@@ -1,11 +1,15 @@
-all: lab1_1 lab1_2
-# compile lab1_1
-lab1_1: lab1_1.cpp 
-	g++ -o lab1_1 lab1_1.cpp
+all: random input dice
+# compile generate_random.cpp
+random: generate_random.cpp 
+	g++ -o random generate_random.cpp
+# compile input.cpp
+input: input.cpp
+	g++ -o input input.cpp
 # compile lab1_2
-lab1_2: lab1_2.cpp
-	g++ -o lab1_2 lab1_2.cpp
+dice: play_dice.cpp
+	g++ -o dice play_dice.cpp
 # delete executable files
 clean: 
-	$(RM) lab1_1
-	$(RM) lab1_2
+	$(RM) random
+	$(RM) input
+	$(RM) dice
