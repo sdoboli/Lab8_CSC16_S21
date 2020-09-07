@@ -31,11 +31,12 @@ Congratulations! You are now ready to start your assignment.
   3. Run the program: `./random`
   4. Fill out answers to questions 1 to 4
   5. Add code for question 5.
-  6. When you finished all, run the program once with the command below. This will save the output of the file in a file called out_lab2_1_random.
+  6. When you finished all, run the program once with the command below. This will save the output of the file in a file called `out_lab2_1_random`.
 		
 	./random |tee out_lab2_1_random
-  7. Update changes to your local repository.  Type `git add out_lab2_1_random`. Then commit with a message:
+  7. Update changes to your local repository. 
 
+	git add out_lab2_1_random
 	git commit -am "your message"
 
 ### Problem 2
@@ -47,8 +48,9 @@ Congratulations! You are now ready to start your assignment.
    4. Fill out answers to questions 1 to 5
    5. Add code for question 6.
    6. When you finished all, run the program once (you need to comment out the code for Q4 otherwise the program will crash). 
-   This will save the output with the answer to questions in a file called out_lab2_2_answers. In addition the whole input/output will be saved in a file out_lab2_2_all
-   		./input |tee out_lab2_2_all
+   This will save the output with the answer to questions in a file called `out_lab2_2_answers`. In addition the whole input/output will be saved in a file `out_lab2_2_all`
+		
+	./input |tee out_lab2_2_all
   7. Update changes to your local repository.  Type:
   		
 	git add out_lab2_2_answers 
