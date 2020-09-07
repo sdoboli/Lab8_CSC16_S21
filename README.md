@@ -34,7 +34,7 @@
 		
 Congratulations! You are now ready to start your assignment.
 
-###Problem 1  
+### Problem 1  
 
 Goal: Understand how to generate random numbers in C++:
 
@@ -44,85 +44,56 @@ Goal: Understand how to generate random numbers in C++:
   4. Fill out answers to questions 1 to 4
   5. Add code for question 5.
   6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab2_1_random.
-		./random |tee out_lab2_1_random
+		
+	./random |tee out_lab2_1_random
   7. Update changes to your local repository.  Type `git add out_lab2_1_random`. Then commit with a message:
 
 	git commit -am "your message"
 
-###Problem 2
+### Problem 2
 
 Goal: Understand how to use cin to input data in your program. 
-   1. Open the file input.cpp in visual studio code. Write down what you think the code is doing.
+   1. Open the file input.cpp in visual studio code. Look at the code.
    2. Compile the program: make input 
    3. Run the program: ./input
-   4. Fill out answers to questions 1 to 4
-   5. Add code for question 5.
-   6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab2_2_input.
-		./input |tee out_lab2_2_input
+   4. Fill out answers to questions 1 to 5
+   5. Add code for question 6.
+   6. When you finished all, run the program once (you need to comment out the code for Q4 otherwise the program will crash). 
+   This will save the output with the answer to questions in a file called out_lab2_2_input.  
+   
+   		./input
   7. Update changes to your local repository.  Type `git add out_lab2_2_input`. Then commit with a message:
 
-	git commit -am "your message"
+		git commit -am "your message"
 
 
-First Problems
+### Problem 3
 
-1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
-2) Compile the lab1_1.cpp by typing: `make lab1_1`
-3) Add code for each comment line with add code. You can compile and run the program at any time with:
-	
-		make lab1_1  && ./lab1_1
-4) When you finished all the code in lab1_1, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
-	
-		./lab1_1 |tee out_lab1_1
-5) Update changes to your local repository. Type: `git status`
-You will see the following: 
-	
-	```On branch master
-	Your branch is up to date with 'origin/master'.
-	
-	Changes not staged for commit:
-	  (use "git add <file>..." to update what will be committed)
-	  (use "git checkout -- <file>..." to discard changes in working directory)
-	
-		modified:  lab1_1.cpp
-	
-	Untracked files:
-	  (use "git add <file>..." to include in what will be committed)
-	
-		lab1_1
-		out_lab_1
-	
-	no changes added to commit (use "git add" and/or "git commit -a")```
+**Goal**: Implement a program that plays the dice game.
 
-You will see the lab1_1.cpp file marked as modified. Then lab1_1 and out_lab1_1 files as untracked - meanining that git does not 'know' about these files. Add out_firstProgram file to your local git repository with command: `git add out_lab1_1`
-	
-To commit changes to the local git repository type: `git commit -a `
-A text editor will open. Write a message that describes your 'change. In my case the nano editor opened. For example write: "Changed firstProgram.cpp" . Save your changes with ctrl-o. Exit with ctrl-x. 
+**Dice Game**: The game of craps is perhaps the most famous of all dice games. The player begin by throwing two standard dice. If the sum of these dice is 7 or 11, the player wins. If the sum is 2,3 or 12, the player loses. Otherwise, the sum becomes the player’s point. The player continues to roll until either the point comes up again, in which case the player wins, or the player throws 7, in which case they lose. 
 
-It is a good practice to commit changes frequently. This allows you to return to a previous version. 
-	
-Check with the command: `git log` the history of your commit messages. 
-	
-B) Second problem 
+**Steps**:
+	1. Write the pseudo-code of the algorithm (the steps) in the file pseudo-code. Make sure that you specify all variables you
+	need. Make sure you name the variables with names that indicate their meaning. 
+	2. Write the code to play dice game in the file play_dice.cpp
+	3. Compile the program with command: `make dice`
+	4. Run the program with command: `./dice`
+	5. When you finished, run the program once with the command `./dice | tee out_lab2_dice`. This will save the output 
+	of your program in a file called out_lab2_dice.  
+	6. Update changes to your local repository.  Type `git add out_lab2_dice`. Then commit with a message:
 
-1) Open the lab1_2.cpp file using the visual studio code editor. Look at the code. 
-2) Compile the lab1_2.cpp by typing: `make lab1_2`
-3) Add code for each comment line with add code. You can compile and run the program at any time with:
+			git commit -am "your message"
 
-		make lab1_2  && ./lab1_2
-4) When you finished all the code in lab1_2, run the program once only with the following command. This will save the output of the file in a file called out_lab1_2.
-
-		./lab1_2 |tee out_lab1_2
-5) Update changes to your local repository often. Add file out_lab1_2 to your local repository.
 	
-        	git add out_lab1_2
-		git commit -am "Your description of the commit"
+#### Commit to the online Assignment repository 
 
 After you are done with your assignment you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
 		git push
 
-!USE WITH CARE: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
+
+**!USE WITH CARE**: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
 
 
 
