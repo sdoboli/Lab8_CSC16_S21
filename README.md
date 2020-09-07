@@ -40,14 +40,14 @@
 Congratulations! You are now ready to start your assignment.
 
 Problem 1) Goal: Understand how to generate random numbers in C++:
-  a. Open the file generate_random.cpp in visual studio code. Look at the code. 
-  b. Compile the program: make random
-  c. Run the program: ./random
-  d. Fill out answers to questions 1 to 4
-  e. Add code for question 5.
-  f. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
+  1. Open the file generate_random.cpp in visual studio code. Look at the code. 
+  2. Compile the program: make random
+  3. Run the program: ./random
+  4. Fill out answers to questions 1 to 4
+  5. Add code for question 5.
+  6. When you finished all, run the program once only with the following command. This will save the output of the file in a file called out_lab1_1.
 		./random |tee out_lab2_1_random
-  g. Update changes to your local repository.  Type `git add out_lab2_1_random`. Then commit with a message:
+  7. Update changes to your local repository.  Type `git add out_lab2_1_random`. Then commit with a message:
 
 		git commit -am "your message"
 
