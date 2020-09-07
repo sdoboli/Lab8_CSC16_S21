@@ -1,4 +1,4 @@
-# Lab 1 - Primitive Data Types 
+# Lab 2 - If/loops 
 
 ## Preliminary steps: 
 
@@ -11,11 +11,9 @@
 
 3. Clone the github classroom repository locally in /vagrant folder:
 	
-	a) Check that you are inside /vagrant folder. Type: `pwd`
+	a) In your browser go to the lab link posted on Blackboard.
 	
-	b) In your browser go to the lab link posted on Blackboard.
-	
-	c)  Then login into your github account and you should see a new repository with 
+	c)  Login into your github account and you should see a new repository with 
 	the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
 	
 	d) Clone the lab repository on your virtual machine (a new folder will be created with the name of the assignment. All files from the repository will be copied there): 
@@ -34,9 +32,22 @@
 		
 		Type: ls     
 
- Congratulations! You are now ready to start your assignment.
+4. Goal: Understand how to generate random numbers in C++. Check the generate_random.cpp code:
+	a) Open the file in visual studio code. Write down what you think the code is doing.
+	b) Compile the program: make random
+	c) Run the program: ./random
 
-A) First Problems
+5. Goal: Understand how to use cin to input data in your program. Check the code: input.cpp
+	a) Open the file in visual studio code. Write down what you think the code is doing.
+	b) Compile the program: make input
+	c) Run the program: ./input
+
+Congratulations! You are now ready to start your assignment.
+
+
+
+
+First Problems
 
 1) Open the lab1_1.cpp file using the visual studio code editor. Look at the code. 
 2) Compile the lab1_1.cpp by typing: `make lab1_1`
