@@ -1,4 +1,3 @@
-/* Suppose we roll a single die, repeatedly if we like, and sum the faces. We can stop at any point, and the sum becomes our score; however, if we exceed 10, our score is zero. Play this game against the computer. What would be a good strategy for the computer */
 /* Add your name here */
     
 #include <iostream>
