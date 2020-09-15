@@ -32,7 +32,7 @@ the assignment name. Click on the green button Code and then copy the link from 
   4. Fill out answers to questions 1 to 3
   6. When you finished all, run the program once with the command below. This will save the output of the file in a file called `out_lab3_1_param`.
 		
-	./random |tee out_lab3_1_param
+	./param |tee out_lab3_1_param
   7. Update changes to your local repository. 
 
 	git add out_lab3_1_param
@@ -47,7 +47,7 @@ the assignment name. Click on the green button Code and then copy the link from 
    4. Fill out answers to questions 1 to 3
    6. When you finished all, run the program once with the command below (you need to comment out the line with:  multiple(v_int1,0); otherwise the program will crash) . The whole input/output will be saved in a file `out_lab3_static`
 		
-	./input |tee out_lab3_2_static
+	./static |tee out_lab3_2_static
 7. Update changes to your local repository.  Type:
   		 
 		git add out_lab3_2_static
