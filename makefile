@@ -1,13 +1,13 @@
-all: random input dice
-# compile generate_random.cpp
-random: generate_random.cpp 
-	g++ -o random generate_random.cpp
-# compile input.cpp
-input: input.cpp
-	g++ -o input input.cpp
-# compile lab1_2
-dice: play_dice.cpp
-	g++ -o dice play_dice.cpp
+all: param static dice
+# compile demo_passing_parameters.cpp
+random: demo_passing_parameters.cpp 
+	g++ -o param demo_passing_parameters.cpp
+# compile ex_static.cpp
+input: ex_static.cpp
+	g++ -o static ex_static.cpp
+# compile dice
+dice: play_dice.cpp dice.cpp
+	g++ -o dice play_dice.cpp dice.cpp -I.
 # delete executable files
 clean: 
 	$(RM) random
