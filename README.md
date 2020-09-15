@@ -1,4 +1,4 @@
-# Lab 2 - If/loops 
+# Lab 3 - Functions 
 
 ## Preliminary steps: 
 
@@ -75,12 +75,13 @@ Congratulations! You are now ready to start your assignment.
   
 **Steps**:
 1. Look at `dice_game_functions.cpp`, `dice.h`, and `dice.cpp`.
-2. Write code in `dice.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
-3. Compile the program with command: `make dice`
-4. Run the program with command: `./dice`
-5. When you finished, run the program once with the command `./dice | tee out_lab3_dice`. This will save the output 
+2. Look at the file use_case_dice_game. It contains a sample output of the game. 
+3. Write code in `dice.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
+4. Compile the program with command: `make dice`
+5. Run the program with command: `./dice`
+6. When you finished, run the program once with the command `./dice | tee out_lab3_dice`. This will save the output 
 of your program in a file called out_lab3_dice.  
-6. Update changes to your local repository. 
+7. Update changes to your local repository. 
 			
 			git add out_lab3_dice
 			git commit -am "your message"
