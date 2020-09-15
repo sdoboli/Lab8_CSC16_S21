@@ -6,7 +6,7 @@ param: demo_passing_parameters.cpp
 static: ex_static.cpp
 	g++ -o static ex_static.cpp
 # compile dice
-dice: play_dice.cpp dice.cpp
+dice: dice_game_functions.cpp dice.cpp
 	g++ -o dice dice_game_functions.cpp dice.cpp -I.
 # delete executable files
 clean: 
