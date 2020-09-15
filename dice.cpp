@@ -67,7 +67,7 @@ int roll_dice()
                 return 0
             else
                 display message: You need to throw again
-                return sum_throw
+                return point
 
     Preconditions: sum_throw is greater than 0 and less than or equal to 12, 
 */
