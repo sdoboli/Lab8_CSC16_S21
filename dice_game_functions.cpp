@@ -18,7 +18,7 @@ int main()
     {
         int throw_result = get_throw();
         int outcome = decision(throw_result);
-        while(!outcome)
+        while(outcome)
         {
             int point = outcome;
             throw_result = get_throw();
