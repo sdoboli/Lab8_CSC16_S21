@@ -10,6 +10,6 @@ dice: play_dice.cpp dice.cpp
 	g++ -o dice play_dice.cpp dice.cpp -I.
 # delete executable files
 clean: 
-	$(RM) random
-	$(RM) input
+	$(RM) param
+	$(RM) static
 	$(RM) dice
