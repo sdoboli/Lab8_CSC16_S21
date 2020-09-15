@@ -24,9 +24,9 @@ int main()
     cout << v_int1 << " is " << (is_multiple? " ":"not ") << " multiple of " 
         << v_int2 << endl;
     
-   is_multiple = multiple(v_int1,v_int2);
-    cout << v_int1 << " is " << (is_multiple? " ":"not ") << " multiple of " 
-        << v_int2 << endl;
+   is_multiple = multiple(v_int2,v_int1);
+    cout << v_int2 << " is " << (is_multiple? " ":"not ") << " multiple of " 
+        << v_int1 << endl;
 
     multiple(v_int1,0);
     cout << "Q1: what is the role of assert in the function definition \n of multiple ? " << endl;
