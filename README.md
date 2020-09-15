@@ -20,13 +20,13 @@ the assignment name. Click on the green button Code and then copy the link from 
   - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
   - Check the files in the assignment foder. Type: `ls`
 		
-Congratulations! You are now ready to start your assignment.
+**Congratulations! You are now ready to start your assignment.**
 
-### Problem 1  (20 pts code + 10 pts run)
+### Problem 1  (15 pts code + 10 pts run)
 
 **Goal:Understand how data is passed to functions:**
 
-  1. Open the file demo_passing_parameters.cpp in visual studio code. Look at the code. 
+  1. Open the file `demo_passing_parameters.cpp` in visual studio code. Look at the code. 
   2. Compile the program: `make param`
   3. Run the program: `./param`
   4. Fill out answers to questions 1 to 3
@@ -38,14 +38,14 @@ Congratulations! You are now ready to start your assignment.
 	git add out_lab3_1_param
 	git commit -am "your message"
 
-### Problem 2 (20 pts code + 10 pts run)
+### Problem 2 (15 pts code + 10 pts run)
 
 **Goal: Understand static, local and global variables.**
-   1. Open the file ex_static.cpp in visual studio code. Look at the code.
+   1. Open the file `ex_static.cpp` in visual studio code. Look at the code.
    2. Compile the program: `make static` 
    3. Run the program: `./static`
    4. Fill out answers to questions 1 to 3
-   6. When you finished all, run the program once (you need to comment out the line with:  multiple(v_int1,0); otherwise the program will crash) with the command below. The whole input/output will be saved in a file `out_lab2_static`
+   6. When you finished all, run the program once with the command below (you need to comment out the line with:  multiple(v_int1,0); otherwise the program will crash) . The whole input/output will be saved in a file `out_lab3_static`
 		
 	./input |tee out_lab3_2_static
 7. Update changes to your local repository.  Type:
@@ -54,7 +54,7 @@ Congratulations! You are now ready to start your assignment.
 		git commit -am "your message" 
 
 
-### Problem 3 (30 pts code + 10 pts run)
+### Problem 3 (40 pts code + 10 pts run)
 
 **Goal**: Implement a program that plays the dice game **using functions**.
 
@@ -63,11 +63,11 @@ Congratulations! You are now ready to start your assignment.
 **Files** 
 
 1. `dice_game_functions.cpp`. **Don't need to change this file**
-  - Contains the main function -- **Don't need to change this file**
+  - Contains the main function
 2. `dice.h` **Don't need to change this file**
   - .h extension means this is a **header** file.
   - Contains only function declarations, no function definitions
-  - #ifndef, #endif, and #define are preprocessor keywords and they avoid redeclarations of the same function multiple times
+  - `#ifndef`, `#endif`, and `#define` are preprocessor keywords and they avoid redeclarations of the same function multiple times
   - header files are included in cpp files with `#include "dice.h"'. 
 3. `dice.cpp` **Do change this file**
   - This is the file with all function definitions
@@ -75,12 +75,12 @@ Congratulations! You are now ready to start your assignment.
   
 **Steps**:
 1. Look at `dice_game_functions.cpp`, `dice.h`, and `dice.cpp`.
-2. Look at the file use_case_dice_game. It contains a sample output of the game. 
+2. Look at the file `use_case_dice_game`. It contains a sample output of the game. 
 3. Write code in `dice.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make dice`
 5. Run the program with command: `./dice`
 6. When you finished, run the program once with the command `./dice | tee out_lab3_dice`. This will save the output 
-of your program in a file called out_lab3_dice.  
+of your program in a file called `out_lab3_dice`.  
 7. Update changes to your local repository. 
 			
 			git add out_lab3_dice
