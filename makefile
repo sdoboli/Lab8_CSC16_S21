@@ -7,7 +7,7 @@ input: ex_static.cpp
 	g++ -o static ex_static.cpp
 # compile dice
 dice: play_dice.cpp dice.cpp
-	g++ -o dice play_dice.cpp dice.cpp -I.
+	g++ -o dice dice_game_functions.cpp dice.cpp -I.
 # delete executable files
 clean: 
 	$(RM) param
