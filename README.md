@@ -24,43 +24,40 @@ Congratulations! You are now ready to start your assignment.
 
 ### Problem 1  (20 pts code + 10 pts run)
 
-**Goal: Understand how to generate random numbers in C++:**
+**Goal:Understand how data is passed to functions:**
 
-  1. Open the file generate_random.cpp in visual studio code. Look at the code. 
-  2. Compile the program: `make random`
-  3. Run the program: `./random`
-  4. Fill out answers to questions 1 to 4
-  5. Add code for question 5.
-  6. When you finished all, run the program once with the command below. This will save the output of the file in a file called `out_lab2_1_random`.
+  1. Open the file demo_passing_parameters.cpp in visual studio code. Look at the code. 
+  2. Compile the program: `make param`
+  3. Run the program: `./param`
+  4. Fill out answers to questions 1 to 3
+  6. When you finished all, run the program once with the command below. This will save the output of the file in a file called `out_lab3_1_param`.
 		
-	./random |tee out_lab2_1_random
+	./random |tee out_lab3_1_param
   7. Update changes to your local repository. 
 
-	git add out_lab2_1_random
+	git add out_lab3_1_param
 	git commit -am "your message"
 
 ### Problem 2 (20 pts code + 10 pts run)
 
-**Goal: Understand how to use cin to input data in your program.**
-   1. Open the file input.cpp in visual studio code. Look at the code.
-   2. Compile the program: `make input` 
-   3. Run the program: `./input`
-   4. Fill out answers to questions 1 to 5
-   5. Add code for question 6.
-   6. When you finished all, run the program once (you need to comment out the code for Q4 otherwise the program will crash). 
-   This will save the output with the answer to questions in a file called `out_lab2_2_answers`. In addition the whole input/output will be saved in a file `out_lab2_2_all`
+**Goal: Understand static, local and global variables.**
+   1. Open the file ex_static.cpp in visual studio code. Look at the code.
+   2. Compile the program: `make static` 
+   3. Run the program: `./static`
+   4. Fill out answers to questions 1 to 3
+   6. When you finished all, run the program once (you need to comment out the line with:  multiple(v_int1,0); otherwise the program will crash) with the command below. The whole input/output will be saved in a file `out_lab2_static`
 		
-	./input |tee out_lab2_2_all
-  7. Update changes to your local repository.  Type:
+	./input |tee out_lab3_2_static
+7. Update changes to your local repository.  Type:
   		
-	git add out_lab2_2_answers 
-	git add out_lab2_2_all
+	git add out_lab3_1_param 
+	git add out_lab3_2_static
 	git commit -am "your message" 
 
 
 ### Problem 3 (30 pts code + 10 pts run)
 
-**Goal**: Implement a program that plays the dice game.
+**Goal**: Implement a program that plays the dice game **using functions**.
 
 **Dice Game**: The game of craps is perhaps the most famous of all dice games. The player begin by throwing two standard dice. Each dice can have a value of 1 to 6. If the sum of these dice is 7 or 11, the player wins. If the sum is 2,3 or 12, the player loses. Otherwise, the sum becomes the player’s point. The player continues to roll until either the point comes up again, in which case the player wins, or the player throws 7, in which case they lose. You need to write a program that plays the dice game. 
 
@@ -71,11 +68,11 @@ Congratulations! You are now ready to start your assignment.
   - Comment your code as needed to explain what parts of the code are doing - no need to comment already intuitive statements.
 3. Compile the program with command: `make dice`
 4. Run the program with command: `./dice`
-5. When you finished, run the program once with the command `./dice | tee out_lab2_dice`. This will save the output 
-of your program in a file called out_lab2_dice.  
+5. When you finished, run the program once with the command `./dice | tee out_lab3_dice`. This will save the output 
+of your program in a file called out_lab3_dice.  
 6. Update changes to your local repository. 
 			
-			git add out_lab2_dice
+			git add out_lab3_dice
 			git commit -am "your message"
 
 	
