@@ -157,7 +157,7 @@ int  binary_search(int array [], int size, int value)
 bool is_sorted(int array[], int size, bool ascending)
 {
     bool result = true;
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size-1; i++)
     {
         if (ascending)
         {
