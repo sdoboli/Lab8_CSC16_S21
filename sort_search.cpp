@@ -13,17 +13,12 @@ using namespace std;
 
 #include "header.h"
 
-
-
-
-
-
 int main()
 {
 
     srand(time(NULL));
-	const int MAX_SIZE = 40;    // constant variable that holds the array size
-	// 1. declare and array of integers of MAX_SIZE
+    const int MAX_SIZE = 40;    // constant variable that holds the array size
+    // 1. declare and array of integers of MAX_SIZE
     int test_array[MAX_SIZE];
 
     // 2. Call function init_array to initialize array items with values stored 
@@ -81,8 +76,8 @@ int main()
     sort_insert(copy_array,MAX_SIZE);
     
     // 6. Test array is sorted descending order
-    cout << "Test bubble sort algorithm is "; 
-    if (is_sorted(test_array, MAX_SIZE, false))
+    cout << "Test insertion sort algorithm is "; 
+    if (is_sorted(copy_array, MAX_SIZE, false))
         cout << "correct" << endl;
     else
         cout << "incorrect" << endl;
