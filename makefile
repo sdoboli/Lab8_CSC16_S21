@@ -1,15 +1,7 @@
-all: param static dice
-# compile demo_passing_parameters.cpp
-param: demo_passing_parameters.cpp 
-	g++ -o param demo_passing_parameters.cpp
-# compile ex_static.cpp
-static: ex_static.cpp
-	g++ -o static ex_static.cpp
-# compile dice
-dice: dice_game_functions.cpp dice.cpp
-	g++ -o dice dice_game_functions.cpp dice.cpp -I.
+all: sort_search
+# compile sort_search
+sort_search: sort_search.cpp functions.cpp
+	g++ -o sort_search sort_search.cpp functions.cpp -I.
 # delete executable files
 clean: 
-	$(RM) param
-	$(RM) static
-	$(RM) dice
+	$(RM) sort_search
