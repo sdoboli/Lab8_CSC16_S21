@@ -54,8 +54,8 @@ Description of these functions is in the file `functions.cpp`. Searching and sor
 1. Look at `sort_search.cpp` file. 
 3. Write code in `functions.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make`
-5. Run the program with command: `./search_sort`
-6. When you finished, run the program once with the command `./search_sort | tee out_lab4`. This will save the output 
+5. Run the program with command: `./sort_search`
+6. When you finished, run the program once with the command `./sort_search | tee out_lab4`. This will save the output 
 of your program in a file called `out_lab4`.  
 7. Update changes to your local repository. 
 			
