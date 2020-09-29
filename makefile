@@ -1,7 +1,7 @@
-all: sort_search
+all: strings
 # compile sort_search
-sort_search: sort_search.cpp functions.cpp
-	g++ -o sort_search sort_search.cpp functions.cpp -I.
+strings: driver_string.cpp functions.cpp
+	g++ -o strings driver_strings functions.cpp -I.
 # delete executable files
 clean: 
-	$(RM) sort_search
+	$(RM) strings
