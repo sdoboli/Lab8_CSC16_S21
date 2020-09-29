@@ -25,7 +25,7 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Tasks**
 
-0. Check the code, compile and run `ex_strings_class.cpp' file. Compile it with: `g++ ex_strings_class.cpp` and run it with `./a.out`.
+0. Check the code, compile and run `ex_strings_class.cpp` file. Compile it with: `g++ ex_strings_class.cpp` and run it with `./a.out`.
 
 You need to implement the following functions:
 1. `bool unique_char(string);`
