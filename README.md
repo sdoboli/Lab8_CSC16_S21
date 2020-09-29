@@ -25,6 +25,8 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Tasks**
 
+0. Check the code, compile and run `ex_strings_class.cpp' file. Compile it with: `g++ ex_strings_class.cpp` and run it with `./a.out`.
+
 You need to implement the following functions:
 1. `bool unique_char(string);`
 2. `bool is_permutation(string, string);`
@@ -35,27 +37,27 @@ Description of these functions is in the file `functions.cpp`. You will use the 
 
 **Coding Files** 
 
-1. `sort_search.cpp`. **Don't need to change this file**
+1. `driver_strings.cpp`. **Don't need to change this file**
   - Contains the main function
 2. `header.h` **Don't need to change this file**
   - .h extension means this is a **header** file.
   - Contains only function declarations, no function definitions
   - `#ifndef`, `#endif`, and `#define` are preprocessor keywords and they avoid redeclarations of the same function multiple times
   - header files are included in cpp files with `#include "header.h"'. 
-3. `functions.cpp` **Do change this file**
+3. `functions.cpp` **Change this file**
   - This is the file with all function definitions
-  - You need to write the body of all functions called in main
+  - You need to write the body of all functions which are then tested in main
   
 **Steps**:
-1. Look at `sort_search.cpp` file. 
+1. Look at `driver_strings.cpp` file. 
 3. Write code in `functions.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make`
-5. Run the program with command: `./sort_search`
-6. When you finished, run the program once with the command `./sort_search | tee out_lab4`. This will save the output 
-of your program in a file called `out_lab4`.  
+5. Run the program with command: `./strings`
+6. When you finished, run the program once with the command `./strings | tee out_lab5`. This will save the output 
+of your program in a file called `out_lab5`.  
 7. Update changes to your local repository. 
 			
-			git add out_lab4
+			git add out_lab5
 			git commit -am "your message"
 
 	
@@ -64,7 +66,6 @@ of your program in a file called `out_lab4`.
 After you are done with your assignment you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
 		git push
-
 
 **!USE WITH CARE**: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
 
