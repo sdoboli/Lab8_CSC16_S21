@@ -90,6 +90,15 @@ int main()
     }
 }
 
+/*
+     Checks if a string is a palindrome.
+     A palindrome is a string that contains the same sequence of characters from right to left and from left to right
+     Examples: abba is a palindrome, abcba is a palindrome, abca is not a palindrome
+     Input: a string
+     Output: bool true if string is a palindrome, false otherwise
+     Processing: check pairs of characters from the beginning and end of the string, stops when they 
+     are not equal or when the middle of the string has been passed. 
+*/
 bool is_palindrome(string s)
 {
     int i = 0;
