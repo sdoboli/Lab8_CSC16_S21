@@ -47,10 +47,11 @@ Description of these functions is in the file `functions.cpp`. You will use the 
 3. `functions.cpp` **Change this file**
   - This is the file with all function definitions
   - You need to write the body of all functions which are then tested in main
+  - You need to add the pseudo-code in the header comment Processing section of each function
   
 **Steps**:
 1. Look at `driver_strings.cpp` file. 
-3. Write code in `functions.cpp` according to the description of each function in the function header - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
+3. Write your pseudo-code steps in the header comment Processing section of each function in `functions.cpp`. Then write the body of each function definition. - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make`
 5. Run the program with command: `./strings`
 6. When you finished, run the program once with the command `./strings | tee out_lab5`. This will save the output 
