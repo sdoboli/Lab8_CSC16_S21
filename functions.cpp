@@ -1,180 +1,78 @@
 // WRITE ALL FUNCTION DEFINITIONS HERE
-
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-#include <fstream>
 #include <string>
+#include <cstring>
 using namespace std;
 #include "header.h"
 
-/* ########################
-    Function: max_array(int array[], int size))
-    Purpose: return the maximum value from an integer array
-    Inputs: array and its size
-    Output: integer max value
-############################## */
- int max_array(int array[], int size)
- {
-	// declare and initialize an integer to hold the max value
-	int max = array[0];
-	
-	// FOR each element in the array 
-	for (int i = 1; i < size; i++)
-	{
-		// compare the current max value with each 
-		// element in the array
-		if (array[i] > max)
-			max = array[i];
-	 // update current max if needed
-	}	
-	// return the max value
-	return max;
- }
 
-/* ########################
-    Function: min_array(int array[], int size))
-    Purpose: return the min value from an integer array
-    Inputs: array and its size
-    Output: integer min value
-############################## */
- int min_array(int array[], int size)
- {
-     return 0; // replace this
- }
- /*
-    void init_array(int array[], int size, string file_name)
-    Purpose: initialize items in an array of size with values read from a text file
-    Inputs: array, size, string with name of the file
-    Output: returns the number of integer values read up to size. 
-    Preconditions: a file with the name file_name exists. 
- */
-int init_array(int array[], int size, string file_name)
-{ // this function should not display anything 
-    ifstream input_file; // creates an input file stream object (similar to cin)
-    // but it reads input from a file not from the keyboard
-    input_file.open(file_name);  // associate the file stream with a file
-    int value;
-    int i = 0;
-    while (input_file >> value && i < size)
-    {
-        array[i] = value;
-        i++;
-    }
-    
-    input_file.close();
-    return i; // return the number of values read
-}
-
- /*
-    void display_array(int array[], int size)
-    Purpose: display array items on one row separated by spaces
-    Inputs: array and its size
-    Outputs: none
- */
- void display_array(int array[], int size)
- {
- 
- }
- 
-  /*
-    void swap(int &v1, int &v2)
-    Purpose: swap the values in v1 and v2
-    Inputs: two integers passed by reference
-    Postconditions: value of v1 is stored in v2 and viceversa
- */
-
-void swap(int &v1, int &v2)
-{ // this function should not display anything 
-
-}
-
-  /*
-    void sort_bubble(int array[], int size)
-    Purpose: sort items in an array in ASCENDING order
-    Inputs: array and its size
-    Outputs: none
-    Processing: implement the bubble sort algorithm
-    Postcondition: array items are sorted 
- */
- void sort_bubble(int array[], int size)
- {  // this function should not display anything 
- 
- }
-
-  /*
-    void sort_insert(int array[], int size)
-    Purpose: sort items in the array in DESCENDING order
-    Inputs: array and its size
-    Outputs: none
-    Processing: implement the insertion algorithm
-    Postcondition: array items are sorted 
- */
- 
-void sort_insert(int array[], int size)
-{ // this function should not display anything 
- 
-}
- 
-
- /*
-    int  linear_search(int array[], int size, int value)
-    Purpose: search for value in an array of size elements
-    Inputs: array, size and search value
-    Output: index of the item where the first value was found 
-            or -1 if value is not found int the array
-    Processing: implement linear search algorithm
+/*
+    bool unique_char(string)
+    Input: a string of characters
+    Output: true if all characters in the input string are unique
+    Example: "abcd"  -> returns true, "baca" -> returns false = 'a' appears twice
+    Processing: add pseudo-code
     Preconditions: none
- */
-int  linear_search(int array[], int size, int value)
-{ // this function should not display anything
-
-    // return result only at the end
-    return 0; // replace this
-}
-
- /*
-    int  binary_search(int array[], int size, int value)
-    Purpose: search for value in an array of size elements
-    Inputs: array, size and search value
-    Output: index of the item where the first value was found 
-            or -1 if value is not found int the array
-    Processing: implement the binary search algorithm
-    Preconditions: array is sorted
- */
-int  binary_search(int array [], int size, int value)
-{ // this function should not display anything
-
-    // return result only at the end
-    return 0; // replace this
-}
- 
- /*
-    bool is_sorted(int array[], int size)
-    Purpose: test if array values are sorted either ascending or descending
-    Output: true if sorted 
- */
-bool is_sorted(int array[], int size, bool ascending)
+    Postconditions: string is not modified
+*/
+bool unique_char(string str)
 {
-    bool result = true;
-    for (int i = 0; i < size-1; i++)
-    {
-        if (ascending)
-        {
-            if (array[i] > array[i+1])
-            {
-                result = false;
-                break;
-            }
-        }
-        else
-        {
-             if (array[i] < array[i+1])
-            {
-                result = false;
-                break;
-            }
-        }
-    }
-    return result;
+    // add your code
+    return true;
+}
+
+/*
+    bool is_permutation(string, string)
+    Input: 2 strings
+    Output: true if the 2 input strings are a permutation of each other, 
+            false otherwise
+    Example: "abcda", "dabca" --> returns true,  
+             "abcd", "abc" --> returns false
+    Processing: add pseudo-code
+    Preconditions: none
+    Postconditions: none
+*/
+bool is_permutation(string s1, string s2)
+{
+    // add your code
+    return true;
+}
+/*
+    string add_one(string)
+    Input: a string of digits
+    Output: a string of digits
+    Processing: add one to the input string and 
+                return new string with the result
+    Examples: input = "4321", output = "4322"
+              input = "999", output = "1000"
+              input = "abc" output = "" // empty string
+              input = ""   output = "" // empty string
+    Preconditions: the string starts with a non-zero digit, and it has no 
+                    leading or trailing spaces
+                    string contains only digits
+    Postconditions: none
+*/
+string add_one(string str)
+{
+    // add your code
+    return "test";
+}
+
+/*
+    bool one_edit(string, string)
+    Input: two strings
+    Output: true if the two strings are one edit away from each other
+    Processing: add pseudo-code
+    Examples:
+        "same", "some"      -> true   replace a character ('a' with 'o')
+		"sme",   some"      -> true   insert a character ('o')
+		"tooday", "today"   -> true   delete a character ('o')
+		"too", "together"   -> false  not one edit away
+    Preconditions: none
+    Postconditions: none
+*/
+bool one_edit(string s1, string s2)
+{
+    // add your code
+    return true;
 }
