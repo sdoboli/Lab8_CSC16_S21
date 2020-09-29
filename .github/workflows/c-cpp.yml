@@ -16,7 +16,7 @@ jobs:
     - name: make_all
       run: make
     - name: run_sort_search
-      run: ./sort_search
+      run: ./strings
     - name: clean
       run: make clean
     
