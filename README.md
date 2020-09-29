@@ -1,4 +1,4 @@
-# Lab 4 - Arrays
+# Lab 5 - Strings
 
 ## Preliminary steps: 
 
@@ -26,16 +26,12 @@ the assignment name. Click on the green button Code and then copy the link from 
 **Tasks**
 
 You need to implement the following functions:
-1. `int min_array(int [], int);`
-2. `void display_array(int [], int );`
-3. `int init_array(int [], int ,string);`
-4. `void swap(int &, int &);`
-5. `void sort_bubble(int [], int);`
-6. `void sort_insert(int [], int);`
-7. `int  linear_search(int [], int, int);`
-8. `int  binary_search(int [], int, int);`
+1. `bool unique_char(string);`
+2. `bool is_permutation(string, string);`
+3. `string add_one(string);`
+4. `bool one_edit(string, string);`
 
-Description of these functions is in the file `functions.cpp`. Searching and sorting algorithms are described in the attached pdf files.
+Description of these functions is in the file `functions.cpp`. You will use the string class. are described in the attached pdf files.
 
 **Coding Files** 
 
