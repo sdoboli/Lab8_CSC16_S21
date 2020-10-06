@@ -34,6 +34,7 @@ You need to implement the following functions RECURSIVELY:
 4. `bool is_sorted(int array[], int size);`
 
 ***EXTRA CREDIT - only if done according to specifications ***
+
 5. int max_special(int array[], int);
 6. void permutations(string s);
 
