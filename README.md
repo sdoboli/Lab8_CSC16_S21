@@ -29,9 +29,9 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 You need to implement the following functions RECURSIVELY:
 1. `string to_lower(string str);`
-2. `string replace(string str, char orig, char replace);`
-3. `string strip_non_alpha(string str);`
-4. `bool is_sorted(int array[], int size);`
+2. `string replace(string str, char orig, char repl);`
+3. `string strip(string str, string remove = " ");`
+4. `bool is_sorted(int array[], int size, string type = "up");`
 
 ***EXTRA CREDIT - only if done according to specifications ***
 
