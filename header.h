@@ -11,5 +11,7 @@ string replace(string str, char old, char repl);
 string strip(string str, string replace = " ");
 bool is_sorted(int array[], int size, string type = "up");
 void display_array(int array[], int);
+int max_special(int array[], int);
+void permutations(string s);
 
 #endif
