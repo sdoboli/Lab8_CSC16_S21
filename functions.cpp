@@ -9,20 +9,20 @@ using namespace std;
 
 
 /*
-    string toUpper(string s);
-    Goal: Write a recursive function that converts a string into upper case letters. 
-    Return the new string.
+    string to_lower(string s);
+    Goal: Write a recursive function that converts a string into lower case letters. 
+    The function returns the new string.
 
 	Use cases: 
-		toUpper("Today")      --> TODAY
+		to_lower("Today")      --> today
 	
-	You can use the toupper() function  in the standard library to convert one 
+    You can use the tolower() function  in the standard library to convert one 
     character to upper case letter. Look for its usage in the C++ reference 
-    page on-line:  int toupper ( int c );    
-    input is a character, output is the upper case letter if input 
+    page on-line:  int tolower ( int c );    
+    input is a character, output is the lower case letter if input 
     is a lower case letter.
     Input: a string with any characters
-    Output: a string with all lower case letters converted into upper
+    Output: a string with all upper case letters converted into lower
             case letters
     Processing: // ADD YOUR STEPS HERE
         
@@ -38,10 +38,10 @@ string to_lower(string str)
 }
 
 /*
-    string replaceChar(string s, char old, char new)
+    string replace(string s, char orig, char repl)
     Goal: 
     Write a recursive function to replace a character in a string with 
-    another character . 
+    another character. 
     DO NOT USE the replace() function in the string class - you will 
     receive no credit. Return the new string.
 
@@ -50,7 +50,7 @@ string to_lower(string str)
 			   output: return a string "afternmmn shmers and thunderstmrms" 
 	Inputs: str = the string, orig = the character you want to replace in str
             repl = the character you want to replace old with 
-    Output: a string with all occurences of old replaced with new
+    Output: a string with all occurences of orig replaced with repl
 
     Processing: // ADD YOUR STEPS HERE
 
@@ -68,24 +68,24 @@ string replace(string str, char orig, char repl)
 }
 
 /*
-    string strip(string str, string remove = " ")
+    string strip(string str, string not_remove = " ")
     Goal: Write a recursive function that removes from a string all 
-    non-letters and non-digits characters except for the characters in remove. If remove string
+    non-letters and non-digits characters except for the characters in not_remove. If not_remove string
     is not specified, then all but spaces are removed. 
     Use-cases: 
-        Input: str = "@task!", remove = "",  Output: "task"
-        Input: str = "%53.57", remove = "."  Output: "53.57"
-        Input: str = "It's a #beautiful day!", remove = " '"-> 
+        Input: str = "@task!", not_remove = "",  Output: "task"
+        Input: str = "%53.57", not_remove = "."  Output: "53.57"
+        Input: str = "It's a #beautiful day!", not_remove = " '"-> 
                Output: "It's a beautiful day"
     Input:  str = the original string, 
-            remove = non-alpha characters you want to remove from str
-                   = default value for remove is the space = " "
-    Output: the string str stripped of all non-letter characters except for 
-            the characters in the string remove.
+            not_remove = non-alpha characters you don't want to remove from str
+                   = default value for not_remove is the space = " "
+    Output: the string str stripped of all non-letter and non-digits characters except for 
+            the characters in the string not_remove.
     Processing: // ADD YOUR STEPS HERE
 
         // You can use the function find in the string class to check if a character
-        // is in the string remove or not
+        // is in the string not_remove or not
         // If the function returns -1 it means the character was not found in the string
         // Check its usage: http://www.cplusplus.com/reference/string/string/find/
         size_t find(char c, size_t pos = 0) 
@@ -102,7 +102,7 @@ string replace(string str, char orig, char repl)
     Postconditions: None
 
 */ 
-string strip(string str, string remove)
+string strip(string str, string not_remove)
 {
     return ""; // replace this with your code
 }
