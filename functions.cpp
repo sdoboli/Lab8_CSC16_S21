@@ -116,6 +116,8 @@ string strip(string str, string not_remove)
             If type = "down", it checks if the array is sorted in decreasing 
             order. 
             The default value for type is "up"
+    Output: bool - true if the array is sorted in increasing order if type = "up", 
+            or in decreasing order if type = "down", false otherwise
     Processing: // ADD YOUR STEPS HERE
         
         Base case:
