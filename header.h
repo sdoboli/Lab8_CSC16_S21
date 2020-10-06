@@ -3,12 +3,13 @@
 #include <string>
 using namespace std;
 
-#ifndef STRINGS
-#define STRINGS
+#ifndef RECURSION
+#define RECURSION
 
-bool unique_char(string);
-bool is_permutation(string, string);
-string add_one(string);
-bool one_edit(string, string);
+string to_lower(string str);
+string replace(string str, char old, char repl);
+string strip(string str, string replace = " ");
+bool is_sorted(int array[], int size, string type = "up");
+void display_array(int array[], int);
 
 #endif
