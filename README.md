@@ -1,4 +1,4 @@
-# Lab 5 - Strings
+# Lab 6 - Recursion
 
 ## Preliminary steps: 
 
@@ -25,19 +25,23 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Tasks**
 
-0. Check the code, compile and run `ex_strings_class.cpp` file. Compile it with: `g++ ex_strings_class.cpp` and run it with `./a.out`.
+0. Check the code, compile and run `ex_recursion_F2020.cpp` file. Compile it with: `g++ ex_recursion_F2020.cpp` and run it with `./a.out`. Check out the notes on recursion we did in class (notes_recursion.pdf)
 
-You need to implement the following functions:
-1. `bool unique_char(string);`
-2. `bool is_permutation(string, string);`
-3. `string add_one(string);`
-4. `bool one_edit(string, string);`
+You need to implement the following functions RECURSIVELY:
+1. `string to_lower(string str);`
+2. `string replace(string str, char orig, char replace);`
+3. `string strip_non_alpha(string str);`
+4. `bool is_sorted(int array[], int size);`
 
-Description of these functions is in the file `functions.cpp`. You will use the string class. are described in the attached pdf files.
+***EXTRA CREDIT - only if done according to specifications ***
+5. int max_special(int array[], int);
+6. void permutations(string s);
+
+Description of these functions is in the file `functions.cpp`. 
 
 **Coding Files** 
 
-1. `driver_strings.cpp`. **Don't need to change this file**
+1. `driver.cpp`. **Don't need to change this file**
   - Contains the main function
 2. `header.h` **Don't need to change this file**
   - .h extension means this is a **header** file.
@@ -50,15 +54,15 @@ Description of these functions is in the file `functions.cpp`. You will use the 
   - You need to add the pseudo-code in the header comment Processing section of each function
   
 **Steps**:
-1. Look at `driver_strings.cpp` file. 
+1. Look at `driver.cpp` file. 
 3. Write your pseudo-code steps in the header comment Processing section of each function in `functions.cpp`. Then write the body of each function definition. - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make`
-5. Run the program with command: `./strings`
-6. When you finished, run the program once with the command `./strings | tee out_lab5`. This will save the output 
-of your program in a file called `out_lab5`.  
+5. Run the program with command: `./recursion`
+6. When you finished, run the program once with the command `./recursion | tee out_lab5`. This will save the output 
+of your program in a file called `out_lab6`.  
 7. Update changes to your local repository. 
 			
-			git add out_lab5
+			git add out_lab6
 			git commit -am "your message"
 
 	
@@ -68,7 +72,6 @@ After you are done with your assignment you need to commit your changes to your 
 	
 		git push
 
-**!USE WITH CARE**: If the online assignment repository was updated by me, type: `git pull` to update your local repository. BE CAREFUL. THIS WILL ERASE YOUR CODE. 
 
 
 
