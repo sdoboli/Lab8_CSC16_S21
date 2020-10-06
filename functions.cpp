@@ -1,5 +1,5 @@
-// THIS IS THE HEADER FILE 
-// Contains all function declarations
+// THIS IS THE FUNCTION IMPLEMENTATION FILE
+// Contains all function definitions
 #include <string>
 #include <cstdlib>
 #include <cctype>    
