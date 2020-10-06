@@ -25,7 +25,7 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Tasks**
 
-0. Check the code, compile and run `ex_recursion_F2020.cpp` file. Compile it with: `g++ ex_recursion_F2020.cpp` and run it with `./a.out`. Check out the notes on recursion we did in class (notes_recursion.pdf)
+0. Check the code, compile and run `ex_recursion_F2020.cpp` file. Compile it with: `g++ ex_recursion_F2020.cpp` and run it with `./a.out`. Check out the notes on recursion we did in class (Recursion.pdf)
 
 You need to implement the following functions RECURSIVELY:
 1. `string to_lower(string str);` (25 pts)
