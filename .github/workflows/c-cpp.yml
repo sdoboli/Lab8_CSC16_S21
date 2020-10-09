@@ -19,5 +19,6 @@ jobs:
       run: make
     - name: run_midterm
       run: ./midterm
+    - name: clean
       run: make clean
     
