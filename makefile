@@ -1,7 +1,7 @@
-all: recursion
-# compile sort_search
-recursion: driver.cpp functions.cpp
-	g++ -o recursion driver.cpp functions.cpp -I.
+all: midterm
+# compile midterm
+midterm: driver.cpp functions.cpp
+	g++ -o midterm driver.cpp functions.cpp -I.
 # delete executable files
 clean: 
-	$(RM) recursion
+	$(RM) midterm
