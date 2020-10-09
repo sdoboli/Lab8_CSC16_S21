@@ -14,16 +14,16 @@
 	
   - In your browser go to the lab link posted on Blackboard.
   - Login into your github account and you should see a new repository with 
-the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
-  - Clone the midterm repository on your virtual machine (a new folder will be created with the name of the assignment. All files from the repository will be copied there). Type: `git clone add_https_link_from_above`
-  - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
-  - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
-  - Check the files in the assignment foder. Type: `ls`
+the midterm name. Click on the green button Code and then copy the link from the Clone with HTTPS option
+  - Clone the midterm repository on your virtual machine (a new folder will be created with the name of the midterm. All files from the repository will be copied there). Type: `git clone add_https_link_from_above`
+  - Check that you have the new midterm folder in /vagrant. Type:`ls -al`
+  - Change directory to the new midterm folder. Type: `cd midterm_folder_name`
+  - Check the files in the midterm foder. Type: `ls`
 		
 **Congratulations! You are now ready to start your midterm.**
 
 
-**Tasks**
+**Midterm Problems**
 
 You need to implement the following functions:
  1. `int most_frequent(int array[], int size);` (25 pts)
@@ -38,9 +38,7 @@ Description of the functions is in the file `functions.cpp`.
 1. `driver.cpp`. **Don't need to change this file**
   - Contains the main function and tests all functions defined in functions.cpp
 2. `header.h` **Don't need to change this file**
-  - .h extension means this is a **header** file.
   - Contains only function declarations, no function definitions
-  - `#ifndef`, `#endif`, and `#define` are preprocessor keywords and they avoid redeclarations of the same function multiple times
   - header files are included in cpp files with `#include "header.h"'. 
 3. `functions.cpp` **Change this file**
   - This is the file with all function definitions
