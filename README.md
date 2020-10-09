@@ -50,8 +50,10 @@ Description of the functions is in the file `functions.cpp`.
 3. Write your pseudo-code steps in the header comment Processing section of each function in `functions.cpp`. Then write the body of each function definition. - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
 4. Compile the program with command: `make`
 5. Run the program with command: `./midterm`
-6. When you finished, run the program once with the command `./midterm | tee out_mid`. This will save the output 
-of your program in a file called `out_mid`.  
+6. When you finished, run the program once with the command 
+
+		`./midterm | tee out_mid`. 
+This will save the output of your program in a file called `out_mid`.  
 7. Update changes to your local repository. 
 			
 			git add out_mid
