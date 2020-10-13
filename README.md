@@ -23,27 +23,67 @@ the assignment name. Click on the green button Code and then copy the link from 
 **Congratulations! You are now ready to start your assignment.**
 
 
-**Midterm Problems**
+**Lab7 Problems**
 
-You need to implement the following functions:
- 1. `int most_frequent(int array[], int size);` (25 pts)
- 2. `int count_char(string str, char c);` - RECURSIVE (25 pts)
- 3. `string compress(string str);` (25 pts)
- 4. `int num_pairs(int array[], int size, int sum);` (25 pts)
+## Problem 1:
 
-Description of the functions is in the file `functions.cpp`. 
+**Goal: Implement a program that plays the dice game using Dice class.**
 
-**Coding Files** 
+Dice Game: The game of craps is perhaps the most famous of all dice games. The player begin by throwing two standard dice. Each dice can have a value of 1 to 6. If the sum of these dice is 7 or 11, the player wins. If the sum is 2,3 or 12, the player loses. Otherwise, the sum becomes the player’s point. The player continues to roll until either the point comes up again, in which case the player wins, or the player throws 7, in which case they lose. You need to write a program that plays the dice game.
 
-1. `driver.cpp`. **Don't need to change this file**
-  - Contains the main function and tests all functions defined in functions.cpp
-2. `header.h` **Don't need to change this file**
-  - Contains only function declarations, no function definitions
-  - header files are included in cpp files with `#include "header.h"'. 
-3. `functions.cpp` **Change this file**
-  - This is the file with all function definitions
-  - You need to write the body of all functions
-  - You need to add the pseudo-code in the header comment Processing section of each function
+**Coding Files in Dice folder** 
+
+1. `play_dice.cpp`. **Need change this file: add the game logic using Dice objects as dice **
+2. `Dice.h` **Don't need to change this file**
+  - Contains the Dice class definition
+3. `Dice.cpp` **Don't change this file**
+  - This is the file with all function member definitions from class Dice
+4. `test_dice.cpp` **Don't change this file**
+  - Contains a test of all function members inside class Dice. 
+
+**Steps** 
+1. Look at `Dice.h` and `Dice.cpp` files. 
+3. Write your code in the main function in `play_dice.cpp`
+4. Compile the program with command: `make`
+5. Run the program test_dice with command: `./test_dice`
+6. Write the logic code for the dice game program inside `play_game.cpp`
+7. Compile the program with command: `make`
+8. Run the program test_dice with command: `./dice_game`
+6. When you finished, run the program once with the command 
+
+		`./dice_game | tee out_dice`. 
+This will save the output of your program in a file called `out_dice`.  
+7. Update changes to your local repository. 
+			
+			git add out_dice
+			git commit -am "your message"
+
+## Problem 2:
+
+**Goal: Implement and test a class Team**
+
+**Coding Files in Team folder** 
+
+1. `driverTeam.cpp`. **Change this file: add code for each step**
+2. `Team.h` **Don't need to change this file**
+  - Contains the Team class definition
+3. `Team.cpp` **Change this file - add code for all Team class function definitions **
+  - This is the file with all function member definitions from class Team
+
+**Steps** 
+1. Look at `Team.h`file.
+2. Write the function definitions in `Team.cpp`.
+3. Write your code in the main function in `driverTeam.cpp`
+4. Compile the program with command: `make`
+5. Run the program with command: `./team`
+6. When you finished, run the program once with the command 
+
+		`./team | tee out_team`. 
+This will save the output of your program in a file called `out_team`.  
+7. Update changes to your local repository. 
+			
+			git add out_team
+			git commit -am "your message"
   
 **Steps**:
 1. Look at `driver.cpp` file. 
