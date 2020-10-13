@@ -84,16 +84,6 @@ This will save the output of your program in a file called `out_team`.
 			git add out_team
 			git commit -am "your message"
 
-
-6. When you finished, run the program once with the command 
-
-		`./midterm | tee out_mid`. 
-This will save the output of your program in a file called `out_mid`.  
-7. Update changes to your local repository. 
-			
-			git add out_mid
-			git commit -am "your message"
-
 ## Problem 3:
 
 **Goal: Implement and test a class Money**
