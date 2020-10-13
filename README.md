@@ -72,7 +72,7 @@ This will save the output of your program in a file called `out_dice`.
 **Steps** 
 1. Look at `Team.h`file.
 2. Write the function definitions in `Team.cpp`.
-3. Write your code in the main function in `driverTeam.cpp`
+3. Write code for each step in the main function in `driverTeam.cpp`
 4. Compile the program with command: `make`
 5. Run the program with command: `./team`
 6. When you finished, run the program once with the command 
@@ -83,12 +83,8 @@ This will save the output of your program in a file called `out_team`.
 			
 			git add out_team
 			git commit -am "your message"
-  
-**Steps**:
-1. Look at `driver.cpp` file. 
-3. Write your pseudo-code steps in the header comment Processing section of each function in `functions.cpp`. Then write the body of each function definition. - ** DO NOT CHANGE THE FUNCTION PROTOTYPES
-4. Compile the program with command: `make`
-5. Run the program with command: `./midterm`
+
+
 6. When you finished, run the program once with the command 
 
 		`./midterm | tee out_mid`. 
@@ -98,13 +94,40 @@ This will save the output of your program in a file called `out_mid`.
 			git add out_mid
 			git commit -am "your message"
 
-#### Commit to the online Midterm repository by Saturday at 11:00 am
+## Problem 3:
 
-After you are done with your midterm you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
+**Goal: Implement and test a class Money**
+
+**Coding Files in Money folder** 
+
+1. `test_classes.cpp`. **Change this file: add code for each step**
+2. `header.h` **Don't need to change this file**
+  - Contains the Money class definition
+3. `class_functions.cpp` **Change this file - add code for all Money class function definitions **
+  - This is the file with all function member definitions from class Money
+
+**Steps** 
+1. Look at `header.h`file.
+2. Write the function definitions in `class_functions.cpp`.
+3. Write code for each step in the main function in `test_classes.cpp`
+4. Compile the program with command: `make`
+5. Run the program with command: `./test_classes`
+6. When you finished, run the program once with the command 
+
+		`./test_classes | tee out_money`. 
+This will save the output of your program in a file called `out_money`.  
+7. Update changes to your local repository. 
+			
+			git add out_money
+			git commit -am "your message"
+
+#### Commit to the online repository by October 21st ###
+
+After you are done with your lab you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
 		git push
 
-Add a feedback comment on github.com (pull requests) with text "Midterm submitted"
+Add a feedback comment on github.com (pull requests) with text "Lab 7 submitted"
 
 
 
