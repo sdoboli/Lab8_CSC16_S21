@@ -18,9 +18,9 @@ class Team
         void setTeam(string other_name, int other_players, int other_wins, int other_losses); 
 
         void display() const; // accessor function 
-	    void addWin();  
-	    void addLoss(); 
-	    bool isBetter(const Team &other) const; // accessor function 
-	    int getPoints() const; // accessor function
+	void addWin();  
+	void addLoss(); 
+	bool isBetter(const Team &other) const; // accessor function - look at the similar function in the Dice.cpp 
+	int getPoints() const; // accessor function
 };
 #endif
