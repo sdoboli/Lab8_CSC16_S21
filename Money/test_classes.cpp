@@ -19,13 +19,13 @@ int main()
     
     Money test_money(101, 25);
     // uncomment line below: 
-    // cout << "TEST ADD " << (my_money.isEqual(test_money):"PASSED ": "NOT PASSED" << endl;
+    // cout << "TEST ADD " << ((my_money == test_money) ? "PASSED ": "NOT PASSED")<< endl;
     // 7. Subtract from my_money the amount $5.50 (95.75)
     // 6. Display the amount in my_money. Make sure you output the name of the object. 
 
     Money test_sub_money(95,75);
     // uncomment line below: 
-    // cout << "TEST SUBTRACT " << (my_money.isEqual(test_sub_money):"PASSED ": "NOT PASSED" << endl;
+    // cout << "TEST SUBTRACT " << ((my_money == test_sub_money) ? "PASSED ": "NOT PASSED")<< endl;
 
     /*   // uncomment code below
     cout << "test_money = "; 
