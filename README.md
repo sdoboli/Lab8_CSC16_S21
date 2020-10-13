@@ -1,4 +1,4 @@
-# Midterm
+# Lab 7: Classes
 
 ## Preliminary steps: 
 
@@ -14,13 +14,13 @@
 	
   - In your browser go to the lab link posted on Blackboard.
   - Login into your github account and you should see a new repository with 
-the midterm name. Click on the green button Code and then copy the link from the Clone with HTTPS option
-  - Clone the midterm repository on your virtual machine (a new folder will be created with the name of the midterm. All files from the repository will be copied there). Type: `git clone add_https_link_from_above`
-  - Check that you have the new midterm folder in /vagrant. Type:`ls -al`
-  - Change directory to the new midterm folder. Type: `cd midterm_folder_name`
-  - Check the files in the midterm foder. Type: `ls`
+the assignment name. Click on the green button Code and then copy the link from the Clone with HTTPS option
+  - Clone the assignment repository on your virtual machine (a new folder will be created with the name of the assignment. All files from the repository will be copied there). Type: `git clone add_https_link_from_above`
+  - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
+  - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
+  - Check the files in the assignment foder. Type: `ls`
 		
-**Congratulations! You are now ready to start your midterm.**
+**Congratulations! You are now ready to start your assignment.**
 
 
 **Midterm Problems**
