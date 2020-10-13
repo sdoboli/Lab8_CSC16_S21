@@ -15,10 +15,23 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make_all
-      run: make
-    - name: run_midterm
-      run: ./midterm
-    - name: clean
-      run: make clean
+    - name: make_dice
+      run: cd Dice
+           make
+           ./dice_game
+           make clean
+           cd ..
+    - name: make_team
+      run: cd Team 
+           make
+           ./team
+           make clean
+           cd ..
+    - name: make_money
+      run: cd Money
+           make
+           ./test_classes
+           make clean
+           cd ..
+
     
