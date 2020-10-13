@@ -43,13 +43,12 @@ Dice Game: The game of craps is perhaps the most famous of all dice games. The p
 
 **Steps** 
 1. Look at `Dice.h` and `Dice.cpp` files. 
-3. Write your code in the main function in `play_dice.cpp`
-4. Compile the program with command: `make`
-5. Run the program test_dice with command: `./test_dice`
-6. Write the logic code for the dice game program inside `play_game.cpp`
-7. Compile the program with command: `make`
-8. Run the program test_dice with command: `./dice_game`
-6. When you finished, run the program once with the command 
+2. Compile the program with command: `make`
+3. Run the program test_dice with command: `./test_dice`
+4. Write the logic code for the dice game program inside `play_game.cpp`
+5. Compile the program with command: `make`
+6. Run the program test_dice with command: `./dice_game`
+7. When you finished, run the program once with the command 
 
 		`./dice_game | tee out_dice`. 
 This will save the output of your program in a file called `out_dice`.  
