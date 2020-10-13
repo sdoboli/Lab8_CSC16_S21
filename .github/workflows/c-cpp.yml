@@ -16,11 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make_dice
-      run: cd Dice
-           make
-           ./dice_game
-           make clean
-           cd ..
+      run: cd Dice; make; ./dice_game; make clean; cd ..
     - name: make_team
       run: cd Team 
            make
