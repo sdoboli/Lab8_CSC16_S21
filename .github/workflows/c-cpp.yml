@@ -18,16 +18,8 @@ jobs:
     - name: make_dice
       run: cd Dice; make; ./dice_game; make clean; cd ..
     - name: make_team
-      run: cd Team 
-           make
-           ./team
-           make clean
-           cd ..
+      run: cd Team; make; ./team; make clean; cd ..
     - name: make_money
-      run: cd Money
-           make
-           ./test_classes
-           make clean
-           cd ..
+      run: cd Money; make; ./test_classes; make clean; cd ..
 
     
