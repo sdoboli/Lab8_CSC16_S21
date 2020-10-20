@@ -19,7 +19,7 @@ the assignment name. Click on the green button Code and then copy the link from 
   - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
   - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
   - Check the files in the assignment foder. Type: `ls`
-		
+  - You will have to cd into one of the folders: Pointers or Money_Account for each of the problems below. Each folder has its own makefile. 
 **Congratulations! You are now ready to start your assignment.**
 
 
@@ -53,61 +53,38 @@ This will save the output of your program in a file called `out_pointers`.
 
 **Coding Files in Money_Account folder** 
 
-1. `driverTeam.cpp`. **Change this file: add code for each step**
-2. `Team.h` **Don't need to change this file**
-  - Contains the Team class definition
-3. `Team.cpp` **Change this file - add code for all Team class function definitions **
-  - This is the file with all function member definitions from class Team
-
-**Steps** 
-1. Look at `Team.h`file.
-2. Write the function definitions in `Team.cpp`.
-3. Write code for each step in the main function in `driverTeam.cpp`
-4. Compile the program with command: `make`
-5. Run the program with command: `./team`
-6. When you finished, run the program once with the command 
-
-		`./team | tee out_team`. 
-This will save the output of your program in a file called `out_team`.  
-7. Update changes to your local repository. 
-			
-			git add out_team
-			git commit -am "your message"
-
-## Problem 3:
-
-**Goal: Implement and test a class Money**
-
-**Coding Files in Money folder** 
-
 1. `test_classes.cpp`. **Change this file: add code for each step**
 2. `header.h` **Don't need to change this file**
-  - Contains the Money class definition
-3. `class_functions.cpp` **Change this file - add code for all Money class function definitions **
+  - Contains the Money and Account classes definition
+3. `money_functions.cpp` **Change this file - add the code from Lab 7 for all Money class function definitions **
   - This is the file with all function member definitions from class Money
-
+4. `account_functions.cpp` **Change this file - add code for all functions in class Account **
+  - This is the file with all function member definitions from class Account
+  
 **Steps** 
 1. Look at `header.h`file.
-2. Write the function definitions in `class_functions.cpp`.
+2. Copy and paste your code from file `class_functions.cpp` from Lab 7 into file `money_functions.cpp`.
+3. Add code in the body of each function in `account_functions.cpp`
 3. Write code for each step in the main function in `test_classes.cpp`
 4. Compile the program with command: `make`
 5. Run the program with command: `./test_classes`
 6. When you finished, run the program once with the command 
 
-		`./test_classes | tee out_money`. 
-This will save the output of your program in a file called `out_money`.  
+		`./test_classes | tee out_account`. 
+		
+ This will save the output of your program in a file called `out_account`.  
 7. Update changes to your local repository. 
 			
-			git add out_money
+			git add out_account
 			git commit -am "your message"
 
-#### Commit to the online repository by October 21st ###
+#### Commit to the online repository by October 28th ###
 
 After you are done with your lab you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
 		git push
 
-Add a feedback comment on github.com (pull requests) with text "Lab 7 submitted"
+Add a feedback comment on github.com (pull requests) with text "Lab 8 submitted"
 
 
 
