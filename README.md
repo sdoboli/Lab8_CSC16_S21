@@ -57,9 +57,9 @@ This will save the output of your program in a file called `out_pointers`.
 1. `test_classes.cpp`. **Change this file: add code for each step**
 2. `header.h` **Don't need to change this file**
   - Contains the Money and Account classes definition
-3. `money_functions.cpp` **Change this file - add the code from Lab 7 for all Money class function definitions **
+3. `money_functions.cpp` **Change this file - add the code from Lab 7 for all Money class function definitions**
   - This is the file with all function member definitions from class Money
-4. `account_functions.cpp` **Change this file - add code for all functions in class Account **
+4. `account_functions.cpp` **Change this file - add code for all functions in class Account**
   - This is the file with all function member definitions from class Account
   
 **Steps** 
