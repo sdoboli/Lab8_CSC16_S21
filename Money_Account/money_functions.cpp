@@ -3,6 +3,8 @@
 using namespace std;
 #include "header.h"
 
+/* ADD HERE THE FUNCTION DEFINITIONS FROM CLASS MONEY THAT YOU DID IN LAB 7 (class_functions.cpp) */
+
 /* 
     Default constructor: initializes a new object to $0.00
 */
