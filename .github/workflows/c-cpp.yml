@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make_dice
+    - name: make_pointers
       run: cd Pointers; make; ./pointers; make clean; cd ..
     - name: make_money_account
       run: cd Money_Account; make; ./test_classes; make clean; cd ..
