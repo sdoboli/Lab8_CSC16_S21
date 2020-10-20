@@ -1,4 +1,4 @@
-# Lab 7: Classes
+# Lab 8: Pointers and OOP
 
 ## Preliminary steps: 
 
@@ -23,45 +23,35 @@ the assignment name. Click on the green button Code and then copy the link from 
 **Congratulations! You are now ready to start your assignment.**
 
 
-**Lab7 Problems**
+**Lab8 Problems**
 
 ## Problem 1:
 
-**Goal: Implement a program that plays the dice game using Dice class.**
+**Goal: Learn about pointers and dynamic memory allocation.**
 
-Dice Game: The game of craps is perhaps the most famous of all dice games. The player begin by throwing two standard dice. Each dice can have a value of 1 to 6. If the sum of these dice is 7 or 11, the player wins. If the sum is 2,3 or 12, the player loses. Otherwise, the sum becomes the player’s point. The player continues to roll until either the point comes up again, in which case the player wins, or the player throws 7, in which case they lose. You need to write a program that plays the dice game.
+**Coding Files in Pointers folder** 
 
-**Coding Files in Dice folder** 
+1. `pointers.cpp`. **Change this file as per instructions inside **
 
-1. `play_dice.cpp`. **Need change this file: add the game logic using Dice objects as dice **
-2. `Dice.h` **Don't need to change this file**
-  - Contains the Dice class definition
-3. `Dice.cpp` **Don't change this file**
-  - This is the file with all function member definitions from class Dice
-4. `test_dice.cpp` **Don't change this file**
-  - Contains a test of all function members inside class Dice. 
 
 **Steps** 
-1. Look at `Dice.h` and `Dice.cpp` files. 
-2. Compile the program with command: `make`
-3. Run the program test_dice with command: `./test_dice`
-4. Write the logic code for the dice game program inside `play_game.cpp`
-5. Compile the program with command: `make`
-6. Run the program test_dice with command: `./dice_game`
-7. When you finished, run the program once with the command 
+1. Compile the program with command: `make`
+2. Run the program pointers with command: `./pointers`
+3. Observe the output and start answering questions in the code.
+4. When you finished, run the program once with the command 
 
-		`./dice_game | tee out_dice`. 
-This will save the output of your program in a file called `out_dice`.  
+		`./pointers | tee out_pointers`. 
+This will save the output of your program in a file called `out_pointers`.  
 7. Update changes to your local repository. 
 			
-			git add out_dice
+			git add out_pointers
 			git commit -am "your message"
 
 ## Problem 2:
 
-**Goal: Implement and test a class Team**
+**Goal: Implement and test a class Account**
 
-**Coding Files in Team folder** 
+**Coding Files in Money_Account folder** 
 
 1. `driverTeam.cpp`. **Change this file: add code for each step**
 2. `Team.h` **Don't need to change this file**
