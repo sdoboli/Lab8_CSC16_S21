@@ -19,7 +19,8 @@ the assignment name. Click on the green button Code and then copy the link from 
   - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
   - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
   - Check the files in the assignment foder. Type: `ls`
-  - You will have to cd into one of the folders: Pointers or Money_Account for each of the problems below. Each folder has its own makefile. 
+  - You will have to `cd` into one of the folders: `Pointers` or `Money_Account` for each of the problems below. Each folder has its own `makefile`. 
+
 **Congratulations! You are now ready to start your assignment.**
 
 
