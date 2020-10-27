@@ -32,7 +32,7 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 ## Problem 1:
 
-**Implement class Deck functions **
+**Implement class Deck functions**
 
 **Description**: A class deck can stores a list of Card objects. Initially the deck is empty. The deck can be initialized with a set of Cards with suites and values in a range. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, or from a certain location. Cards can be added on top or on the bottom. Check the file `Deck.h` which contains the class `Deck` class definition. The Card class is defined in Cards.h, and its functions are implemented in Cards.cpp. Go over these files so you know which data members and which function members are available in the class Cards. 
 
@@ -49,6 +49,7 @@ The data members of a deck are:
  - `ptr_cards` is pointer to a Card object. Its role is to point to an array of max_size Cards objects allocated in dynamic memory. The memory for the array will be allocated when a new Deck object is instantiated. When a card object is added to a deck object, then nr_cards will be incremented by 1 and the card copied in the array pointed by ptr_cards. Cards are stored in consecutive locations in the array. For example, a deck of max_size = 52 and nr_cards = 3, will have three Card objects stored in positions 0,1,2 in the array pointed by ptr_cards.   
 
 **Example**
+		
 		Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is
 				   // allocated now but the array is empty
 		new_deck.init_deck({"hearts, "spades"}, 1,13) //adds 26 cards with suites hearts and spades and values
@@ -80,7 +81,7 @@ The data members of a deck are:
 
 ## Problem 2:
 
-**Goal: Implement a card game **
+**Goal: Implement a card game**
 
 **Description** In the file `card_game.cpp` add logic to play a simple card game. I described the steps of a basic card game between a player and the computer. Use the classes Deck for the deck of cards, the computer and player hand and the pile. Use Card objects for individual cards. You can implement this game or another game. If you implement another game, please add details of it in the file `Comments`.
 
