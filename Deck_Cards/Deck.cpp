@@ -3,6 +3,7 @@
 #include "Deck.h"
 #include <cstdlib>
 #include <iostream>
+#include <cassert>
 using namespace std;
 
 
