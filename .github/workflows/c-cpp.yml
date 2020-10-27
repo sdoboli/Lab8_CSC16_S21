@@ -10,10 +10,14 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: make_game
-      run: cd Deck_Cards; make; ./card_game; make clean; cd ..
+      run: cd Deck_Cards; make; ./card_game
+    - name: make_test 
+      run: ./test_deck; make clean 
+     
+      
+      
