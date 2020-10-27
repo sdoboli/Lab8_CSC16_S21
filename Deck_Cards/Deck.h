@@ -18,13 +18,13 @@ class Deck
 		int  init_deck(string face[], int min_val, int max_val);
 		void shuffle(int nr_shuffles = 100); // shuffle all cards in the deck
 		int  add_top(const Card &);
-      	int  add_bottom(const Card &);
-      	Card remove_top();
+      		int  add_bottom(const Card &);
+      		Card remove_top();
 		Card remove(int pos);
-      	Card peek_top() const;
-      	int  get_size() const;
-      	bool is_full() const;
-      	bool is_empty() const;
+	      	Card peek_top() const;
+      		int  get_size() const;
+	      	bool is_full() const;
+      		bool is_empty() const;
 		void sort();
 		int  best_card(string suite) const;
 		int  worst_card(string suite) const;
