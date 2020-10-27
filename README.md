@@ -1,4 +1,4 @@
-# Lab 8: Pointers and OOP
+# Lab 9: Deck of cards and a card game
 
 ## Preliminary steps: 
 
@@ -19,18 +19,18 @@ the assignment name. Click on the green button Code and then copy the link from 
   - Check that you have the new assignment folder in /vagrant. Type:`ls -al`
   - Change directory to the new assignment folder. Type: `cd assignment_folder_name`
   - Check the files in the assignment foder. Type: `ls`
-  - You will have to `cd` into one of the folders: `Pointers` or `Money_Account` for each of the problems below. Each folder has its own `makefile`. 
+  - You will have to `cd` into `Deck_Cards`. You will find a `makefile` file. 
 
 **Congratulations! You are now ready to start your assignment.**
 
 
-**Lab8 Problems**
+**Lab 9 Problems**
 
 ## Problem 1:
 
-**Goal: Learn about pointers and dynamic memory allocation.**
+**Implement the functions in the class Deck**
 
-**Coding Files in Pointers folder** 
+**Description**: A class deck can store a number of Card objects. Initially the deck is empty. The deck can be either initialized with a full set of Cards with suites and values in a range. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, from the bottom or from a certain location. Cards can be added on top. Check the file `Deck.h` which contains the `Deck` class definition. 
 
 1. `pointers.cpp`. **Change this file as per instructions inside **
 
