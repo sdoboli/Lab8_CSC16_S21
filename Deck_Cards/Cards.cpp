@@ -2,6 +2,7 @@
 #include "Cards.h"
 #include <iostream>
 #include <string>
+#include <cassert>
 using namespace std;
 
 string Card::ALL_SUITE[4] = {"hearts", "diamonds", "spade", "clubs"};
