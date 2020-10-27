@@ -28,25 +28,29 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 ## Problem 1:
 
-**Implement the functions in the class Deck**
+**Implement class Deck functions **
 
-**Description**: A class deck can store a number of Card objects. Initially the deck is empty. The deck can be either initialized with a full set of Cards with suites and values in a range. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, from the bottom or from a certain location. Cards can be added on top. Check the file `Deck.h` which contains the `Deck` class definition. 
+**Description**: A class deck can store a number of Card objects. Initially the deck is empty. The deck can be initialized with a full set of Cards with suites and values in a range. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, from the bottom or from a certain location. Cards can be added on top. Check the file `Deck.h` which contains the class `Deck` class definition. 
 
-1. `pointers.cpp`. **Change this file as per instructions inside **
+**Implementation requirements**
 
+The data members of a deck are: 
 
-**Steps** 
-1. Compile the program with command: `make`
-2. Run the program pointers with command: `./pointers`
-3. Observe the output and start answering questions in the code.
-4. When you finished, run the program once with the command 
+	Card *ptr_cards; // pointer to an array of cards
+	int nr_cards;    // current size deck
+	int max_size;    // max # of cards in the Deck
 
-		`./pointers | tee out_pointers`. 
-This will save the output of your program in a file called `out_pointers`.  
-7. Update changes to your local repository. 
-			
-			git add out_pointers
-			git commit -am "your message"
+ - `max_size` is the maximum number of cards that a Deck object can contain. 
+ - `nr_cards` is the number of cards a Deck object has at a certain time. 
+ - `ptr_cards` is pointer to a Card object. Its role is to point to an array of max_size Cards objects allocated in dynamic memory. The memory for the array will be allocated when a new Deck object is instantiated. 
+
+		Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is allocated now
+				   // but the array is empty
+
+**Steps**
+
+1. Add the definition of all function members of the class `Deck` in file `Deck.cpp`. Each function has a header with: goal, inputs, outputs, processing, preconditions and postconditions. 
+2. Test the function members in a new file
 
 ## Problem 2:
 
