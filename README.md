@@ -27,7 +27,8 @@ the assignment name. Click on the green button Code and then copy the link from 
 **Lab 9 Problems**
 
 **New item 1: Added a file called `Comments`. Please describe in it any changes you made to files/classes and the reason for it. Describe the game in case you implemented another game.**
-**New item 2: File `Acknoledgement`. Describe in this file any help you received from others or from the internet: source, and description of the help received.  
+
+**New item 2: File `Acknoledgement`. Describe in this file any help you received from others or from the internet: source, and description of the help received.**
 
 ## Problem 1:
 
