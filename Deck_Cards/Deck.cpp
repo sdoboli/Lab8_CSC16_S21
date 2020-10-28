@@ -27,7 +27,7 @@ Deck::Deck(int max_deck_size) // empty deck of max_size
 
 /*
     Goal: initialize deck with Cards
-    Inputs: a string of suites, min_val and max_val
+    Inputs: a string of suites, num_suites = number of suites, min_val and max_val
     Outputs: number of cards added to the deck
     Processing:
         For each face in suites
@@ -39,7 +39,7 @@ Deck::Deck(int max_deck_size) // empty deck of max_size
     Postconditions: a number of cards with suites in the string and values 
     in the range min_val and max_val are added to the deck
 */
-int Deck::init_deck(string suites[], int min_val, int max_val)
+int Deck::init_deck(string suites[], int num_suites, int min_val, int max_val)
 {
 
 }
