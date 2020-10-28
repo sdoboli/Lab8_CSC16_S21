@@ -15,7 +15,7 @@ class Deck
 		
 	public: // function members
 		Deck(int max_size = 52); // empty deck of max_size
-		int  init_deck(string face[], int min_val, int max_val);
+		int  init_deck(string face[], int num_suites, int min_val, int max_val);
 		void shuffle(int nr_shuffles = 100); // shuffle all cards in the deck
 		int  add_top(const Card &);
       		int  add_bottom(const Card &);
