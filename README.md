@@ -1,4 +1,4 @@
-# Lab 9: Deck of cards and a card game
+# Lab 8: Deck of cards and a card game
 
 ## Preliminary steps: 
 
@@ -24,7 +24,7 @@ the assignment name. Click on the green button Code and then copy the link from 
 **Congratulations! You are now ready to start your assignment.**
 
 
-**Lab 9 Problems**
+**Lab 8 Problems**
 
 **New item 1: Added a file called `Comments`. Please describe in it any changes you made to files/classes and the reason for it. Describe the game in case you implemented another game.**
 
@@ -34,39 +34,41 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Implement class Deck functions**
 
-**Description**: A class deck can stores a list of Card objects. Initially the deck is empty. The deck can be initialized with a set of Cards with suites and values in a range. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, or from a certain location. Cards can be added on top or on the bottom. Check the file `Deck.h` which contains the class `Deck` class definition. The Card class is defined in Cards.h, and its functions are implemented in Cards.cpp. Go over these files so you know which data members and which function members are available in the class Cards. 
+**Description**: A deck object stores a list of Cards objects. Initially the deck is empty. The deck can be initialized with a set of Cards with suites and values in a specified range depending on the game. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, or from a certain location. Cards can be added on top or on the bottom. 
 
-**Implementation requirements**
+Check the file `Deck.h` which contains the class `Deck` definition. You need to implement the functions in the class Deck. The Cards objects in a Deck will be stored in a dynamic array. You need to allocate dynamic memory for the array of Cards when a new Deck object is instantiated (declared).
 
-The data members of a deck are: 
+A Deck object has the following data members: 
 
 	Card *ptr_cards; // pointer to an array of cards
 	int nr_cards;    // current size deck
-	int max_size;    // max # of cards in the Deck
+	int max_size;   // max # of cards in the Deck
 
- - `max_size` is the maximum number of cards that a Deck object can contain. 
- - `nr_cards` is the number of cards a Deck object has at a certain time. 
- - `ptr_cards` is pointer to a Card object. Its role is to point to an array of max_size Cards objects allocated in dynamic memory. The memory for the array will be allocated when a new Deck object is instantiated. When a card object is added to a deck object, then nr_cards will be incremented by 1 and the card copied in the array pointed by ptr_cards. Cards are stored in consecutive locations in the array. For example, a deck of max_size = 52 and nr_cards = 3, will have three Card objects stored in positions 0,1,2 in the array pointed by ptr_cards.   
+- `max_size` is the capacity of the Deck - how many Cards it can store.
+- `nr_cards` is the number of Cards on the Deck at any one time. `nr_cards` is initially 0. As you initialize the Deck or add/remove Cards to it, `nr_cards` will 
+ change to reflect the number of Cards on the Deck. At all times `nr_cards` will be smaller than `max_size`. 
+- `ptr_cards` is pointer to a Card object. Its role is to point to an array of max_size Cards objects allocated in dynamic memory. The memory for the array will be allocated when a new Deck object is instantiated. When a card object is added to a deck object, then nr_cards will be incremented by 1 and the card copied in the array pointed by ptr_cards. Cards are stored in consecutive locations in the array. For example, a deck of max_size = 52 and nr_cards = 3, will have three Card objects stored in positions 0,1,2 in the array pointed by ptr_cards. 
 
 **Example**
-		
-		Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is
+
+	Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is
 				   // allocated now but the array is empty
-		new_deck.init_deck({"hearts, "spades"}, 1,13) //adds 26 cards with suites hearts and spades and values
+	new_deck.init_deck({"hearts, "spades"}, 1,13) //adds 26 cards with suites hearts and spades and values
 							      // in between 1 and 13.
+							      
+A `Cards` object has an integer face and a string suite as private data members. Functions in the class `Cards` allow you to set the face and the suite for a new `Cards` or an existing `Cards` object, compare `Cards` by suite or by face. Cards class is defined in `Cards.h`, and its functions are already implemented in `Cards.cpp`. Go over these files so you know which data members and which function members are available in the class Cards. A sample test file for the class `Cards` is included as well. You will need to compile it separately with `g++ -o cards test_cards.cpp Cards.cpp` 
+
 
 **Steps**
 
- 1. Add the definition of all function members of the class `Deck` in file `Deck.cpp`. Each function has a header with: goal, inputs, outputs, processing, preconditions and postconditions. 
+ 1. Add the definition of all function members of the class `Deck` in file `Deck.cpp`. Each function has a header with: goal, inputs, outputs, processing, preconditions and postconditions. Do not forget to test for preconditions.
  2. Add code for each step to test the function members in the `test_deck.cpp`. Then compile and run the program  
 		
 		cd Deck_Cards
 		make 
 		./test_deck
 
- 3. When you finished, run the program once with the command 
-
-		`./test_deck | tee out_deck`. 
+ 3. When you finished, run the program once with the command: `./test_deck | tee out_deck`
 		
  This will save the output of your program in a file called `out_deck`.  
  
@@ -75,25 +77,20 @@ The data members of a deck are:
 			git add out_deck
 			git commit -am "your message"
 
-
 **You should not have to modify any other files, but if you need to do so, please add your explanations in the file `Comments`**
-
 
 ## Problem 2:
 
 **Goal: Implement a card game**
 
-**Description** In the file `card_game.cpp` add logic to play a simple card game. I described the steps of a basic card game between a player and the computer. Use the classes Deck for the deck of cards, the computer and player hand and the pile. Use Card objects for individual cards. You can implement this game or another game. If you implement another game, please add details of it in the file `Comments`.
+**Description** In the file `card_game.cpp` add logic to play a simple card game. I described the steps of a basic card game between a player and the computer. Use `Deck` objects for the deck of cards, the computer and player hand and the pile. Use `Cards` objects for individual cards. You can implement this game or another game. If you implement another game, please add details of it in the file `Comments`.
 
 **Steps** 
 
 1. Add the logic of the game in the file `card_game.cpp`
 4. Compile the program with command: `make`
 5. Run the program with command: `./card_game`
-6. When you finished, run the program once with the command 
-
-		`./card_game | tee out_game`. 
-		
+6. When you finished, run the program once with the command: `./card_game | tee out_game`
  This will save the output of your program in a file called `out_game`.  
 7. Update changes to your local repository. 
 			
@@ -108,7 +105,7 @@ After you are done with your lab you need to commit your changes to your github 
 	
 		git push
 
-Add a feedback comment on github.com (pull requests) with text "Lab 9 submitted"
+Add a feedback comment on github.com (pull requests) with text "Lab 8 submitted"
 
 
 
