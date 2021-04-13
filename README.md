@@ -52,11 +52,11 @@ A Deck object has the following data members:
 **Example**
 
 	Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is
-				   // allocated now but the array is empty
+		           // allocated now but the array is empty
 	new_deck.init_deck({"hearts, "spades"}, 1,13) //adds 26 cards with suites hearts and spades and values
 						      // in between 1 and 13.
 							      
-A `Cards` object has an integer face and a string suite as private data members. Functions in the class `Cards` allow you to set the face and the suite for a new `Cards` or an existing `Cards` object, compare `Cards` by suite or by face. Cards class is defined in `Cards.h`, and its functions are already implemented in `Cards.cpp`. Go over these files so you know which data members and which function members are available in the class Cards. A sample test file for the class `Cards` is included as well. You will need to compile it separately with `g++ -o cards test_cards.cpp Cards.cpp` 
+A `Cards` object has an integer `face` and a string `suite` as private data members. Functions in the class `Cards` allow you to set the `face` and the `suite` for a new `Cards` or an existing `Cards` object, compare `Cards` by `suite` or by `face`. Cards class is defined in `Cards.h`, and its functions are already implemented in `Cards.cpp`. Go over these files so you know which data members and which function members are available in the class Cards. A sample test file for the class `Cards` is included as well. You will need to compile it separately with `g++ -o cards test_cards.cpp Cards.cpp` 
 
 
 **Steps**
@@ -99,7 +99,7 @@ A `Cards` object has an integer face and a string suite as private data members.
 
 **You should not have to modify any other files, but if you need to do so, please add your explanations in the file `Comments`**
 
-#### Commit to the online repository by November 4th ###
+#### Commit to the online repository by April 23rd ###
 
 After you are done with your lab you need to commit your changes to your github online repository so I can see them. Right now, all changes are local to your VM. 
 	
