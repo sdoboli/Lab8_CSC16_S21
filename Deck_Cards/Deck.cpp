@@ -25,6 +25,13 @@ Deck::Deck(int max_deck_size) // empty deck of max_size
 
 }
 
+ // destructor - deallocates dynamic memory in the Deck object
+ // deallocate memory for the dynamic array pointed by ptr_cards
+Deck::~Deck()
+{
+    delete [] ptr_cards;
+}
+
 /*
     Goal: initialize deck with Cards
     Inputs: a string of suites, num_suites = number of suites, min_val and max_val

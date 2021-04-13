@@ -14,7 +14,8 @@ class Deck
 		void swap(Card &c1, Card &c2); 
 		
 	public: // function members
-		Deck(int max_size = 52); // empty deck of max_size
+		Deck(int max_size = 52); // constructor empty deck of max_size
+		~Deck(); // destructor - deallocates dynamic memory in the Deck object
 		int  init_deck(string face[], int num_suites, int min_val, int max_val);
 		void shuffle(int nr_shuffles = 100); // shuffle all cards in the deck
 		int  add_top(const Card &);
