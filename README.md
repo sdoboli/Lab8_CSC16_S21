@@ -34,9 +34,9 @@ the assignment name. Click on the green button Code and then copy the link from 
 
 **Implement class Deck functions**
 
-**Description**: A deck object stores a list of Cards objects. Initially the deck is empty. The deck can be initialized with a set of Cards with suites and values in a specified range depending on the game. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, or from a certain location. Cards can be added on top or on the bottom. 
+**Description**: A deck object stores a list of Cards objects. Initially the deck is empty. The deck can be initialized with a set of `Cards` objects with suites and values in a specified range depending on the game. Or cards can be added one by one to the deck. The deck can be shuffled or sorted. Cards can be removed from the top, or from a certain location. Cards can be added on top or on the bottom. 
 
-Check the file `Deck.h` which contains the class `Deck` definition. You need to implement the functions in the class Deck. The Cards objects in a Deck will be stored in a dynamic array. You need to allocate dynamic memory for the array of Cards when a new Deck object is instantiated (declared).
+Check the file `Deck.h` which contains the class `Deck` definition. You need to implement the functions in the class Deck. The `Cards` objects in a Deck will be stored in a dynamic array. You need to allocate dynamic memory for the array of `Cards` when a new `Deck` object is instantiated (declared).
 
 A Deck object has the following data members: 
 
@@ -44,17 +44,17 @@ A Deck object has the following data members:
 	int nr_cards;    // current size deck
 	int max_size;   // max # of cards in the Deck
 
-- `max_size` is the capacity of the Deck - how many Cards it can store.
-- `nr_cards` is the number of Cards on the Deck at any one time. `nr_cards` is initially 0. As you initialize the Deck or add/remove Cards to it, `nr_cards` will 
- change to reflect the number of Cards on the Deck. At all times `nr_cards` will be smaller than `max_size`. 
-- `ptr_cards` is pointer to a Card object. Its role is to point to an array of max_size Cards objects allocated in dynamic memory. The memory for the array will be allocated when a new Deck object is instantiated. When a card object is added to a deck object, then nr_cards will be incremented by 1 and the card copied in the array pointed by ptr_cards. Cards are stored in consecutive locations in the array. For example, a deck of max_size = 52 and nr_cards = 3, will have three Card objects stored in positions 0,1,2 in the array pointed by ptr_cards. 
+- `max_size` is the capacity of the Deck - how many `Cards` it can store.
+- `nr_cards` is the number of Cards on the Deck at any one time. `nr_cards` is initially 0. As you initialize the Deck or add/remove `Cards` to it, `nr_cards` will 
+ change to reflect the number of `Cards` on the Deck. At all times `nr_cards` will be smaller than `max_size`. 
+- `ptr_cards` is pointer to a `Cards` object. Its role is to point to an array of max_size `Cards` objects allocated in dynamic memory. The memory for the array will be allocated when a new `Deck` object is instantiated. When a `Cards` object is added to a `Deck` object, then nr_cards will be incremented by 1 and the card copied in the array pointed by ptr_cards. Cards are stored in consecutive locations in the array. For example, a deck of max_size = 52 and nr_cards = 3, will have three `Cards` objects stored in positions 0,1,2 in the array pointed by ptr_cards. 
 
 **Example**
 
 	Deck new_deck(30); // new_deck is an empty deck with max_size = 30, nr_cards = 0, memory for the array is
 				   // allocated now but the array is empty
 	new_deck.init_deck({"hearts, "spades"}, 1,13) //adds 26 cards with suites hearts and spades and values
-							      // in between 1 and 13.
+						      // in between 1 and 13.
 							      
 A `Cards` object has an integer face and a string suite as private data members. Functions in the class `Cards` allow you to set the face and the suite for a new `Cards` or an existing `Cards` object, compare `Cards` by suite or by face. Cards class is defined in `Cards.h`, and its functions are already implemented in `Cards.cpp`. Go over these files so you know which data members and which function members are available in the class Cards. A sample test file for the class `Cards` is included as well. You will need to compile it separately with `g++ -o cards test_cards.cpp Cards.cpp` 
 
