@@ -19,14 +19,14 @@ class Card
         Card(const Card &other);
         void set_face(int new_face);
         void set_suite(string new_suite);
-
-        int get_face() const;       // accessor
+        bool same_suite(const Card &other) const;
+        bool check_suite(string new_suite) const;
+        int  get_face() const;       // accessor
         string get_suite() const;  // accessor
-
         string display() const; // accessor -returns a string
         // if (card1 == card2) -> card1.operator==(card2)
-        bool operator==(const Card &other); // const Card &other = pass a reference to a constant object
+        bool operator==(const Card &other) const; // const Card &other = pass a reference to a constant object
         Card& operator=(const Card &other); // card0 = card1 = card2
-        bool operator>(const Card &other); 
+        bool operator>(const Card &other) const; 
 };
 #endif
